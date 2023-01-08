@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isLoading = true
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            if isLoading {
+                splashScreenView
+            }
         }
-        .padding()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                isLoading.toggle()
+            })
+        }
+    }
+}
+
+extension ContentView {
+    var splashScreenView: some View {
+        ZStack {
+            Image("Splash")
+                .resizable()
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
