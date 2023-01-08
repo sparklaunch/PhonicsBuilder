@@ -11,10 +11,12 @@ struct ContentView: View {
     @State private var isLoading = true
     var body: some View {
         ZStack {
-            Text("Hello World")
+            RootView()
                 .zIndex(0)
             if isLoading {
-                splashScreenView.transition(.opacity).zIndex(1)
+                splashScreenView
+                    .transition(.opacity)
+                    .zIndex(1)
             }
         }
         .onAppear {
