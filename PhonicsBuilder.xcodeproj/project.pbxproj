@@ -12,6 +12,10 @@
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
 		3D6F9654296B796300FEFBF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9653296B796300FEFBF8 /* Preview Assets.xcassets */; };
 		3D6F965C296B7E9D00FEFBF8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F965B296B7E9D00FEFBF8 /* RootView.swift */; };
+		3D6F965F296B808300FEFBF8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F965E296B808300FEFBF8 /* Camera.swift */; };
+		3D6F9662296B822E00FEFBF8 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9661296B822E00FEFBF8 /* CameraViewModel.swift */; };
+		3D6F9664296B83F400FEFBF8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9663296B83F400FEFBF8 /* CameraView.swift */; };
+		3D6F9666296B847900FEFBF8 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9665296B847900FEFBF8 /* CameraPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		3D6F9650296B796300FEFBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D6F9653296B796300FEFBF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D6F965B296B7E9D00FEFBF8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3D6F965E296B808300FEFBF8 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		3D6F9661296B822E00FEFBF8 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		3D6F9663296B83F400FEFBF8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		3D6F9665296B847900FEFBF8 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 		3D6F964B296B796200FEFBF8 /* PhonicsBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				3D6F9660296B822100FEFBF8 /* ViewModels */,
+				3D6F965D296B807700FEFBF8 /* Utils */,
 				3D6F965A296B79C800FEFBF8 /* Views */,
 				3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */,
 				3D6F9650296B796300FEFBF8 /* Assets.xcassets */,
@@ -74,8 +84,26 @@
 			children = (
 				3D6F964E296B796200FEFBF8 /* ContentView.swift */,
 				3D6F965B296B7E9D00FEFBF8 /* RootView.swift */,
+				3D6F9663296B83F400FEFBF8 /* CameraView.swift */,
+				3D6F9665296B847900FEFBF8 /* CameraPreviewView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		3D6F965D296B807700FEFBF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F965E296B808300FEFBF8 /* Camera.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		3D6F9660296B822100FEFBF8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F9661296B822E00FEFBF8 /* CameraViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6F965F296B808300FEFBF8 /* Camera.swift in Sources */,
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
+				3D6F9666296B847900FEFBF8 /* CameraPreviewView.swift in Sources */,
+				3D6F9664296B83F400FEFBF8 /* CameraView.swift in Sources */,
+				3D6F9662296B822E00FEFBF8 /* CameraViewModel.swift in Sources */,
 				3D6F965C296B7E9D00FEFBF8 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
