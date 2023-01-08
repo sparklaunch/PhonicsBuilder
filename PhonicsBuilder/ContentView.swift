@@ -11,13 +11,17 @@ struct ContentView: View {
     @State private var isLoading = true
     var body: some View {
         ZStack {
+            Text("Hello World")
+                .zIndex(0)
             if isLoading {
-                splashScreenView
+                splashScreenView.transition(.opacity).zIndex(1)
             }
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-                isLoading.toggle()
+                withAnimation {
+                    isLoading.toggle()
+                }
             })
         }
     }
