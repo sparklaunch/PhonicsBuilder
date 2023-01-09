@@ -9,7 +9,15 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        Text("Placeholder")
+        ZStack {
+            Preview()
+                .rotationEffect(.degrees(-90))
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+        }
+        .onAppear {
+            Camera.verifyPermissions()
+        }
     }
 }
 
