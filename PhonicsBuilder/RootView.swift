@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct RootView: View {
-    @ObservedObject var viewModel = CameraViewModel()
     var body: some View {
-        ZStack {
-            viewModel.cameraPreview
-                .edgesIgnoringSafeArea(.all)
-        }
-        .onAppear {
-            viewModel.configure()
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
