@@ -30,7 +30,8 @@ enum Camera {
                 print("Unable to generate UIImage from image data.")
                 return
             }
-            guard let jpegData = uiImage.jpegData(compressionQuality: 100) else {
+            let rotatedUIImage = uiImage.rotate(radians: -.pi / 2)
+            guard let jpegData = rotatedUIImage.jpegData(compressionQuality: 100) else {
                 return
             }
             let fileManager = FileManager.default
@@ -114,7 +115,9 @@ enum Camera {
         return uiImage
     }
     static func cropPhoto(_ uiImage: UIImage) -> UIImage {
-        let cropRect = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let width = uiImage.size.width
+        let height = uiImage.size.height
+        let cropRect = CGRect(x: 0, y: 0, width: width * 0.2, height: height * 0.2)
         let croppedImage = uiImage.cgImage!.cropping(to: cropRect)
         return UIImage(cgImage: croppedImage!)
     }
@@ -126,5 +129,23 @@ struct Preview: UIViewRepresentable {
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
+    }
+}
+
+extension UIImage {
+    func rotate(radians: CGFloat) -> UIImage {
+        let rotatedSize = CGRect(origin: .zero, size: size)
+            .applying(CGAffineTransform(rotationAngle: CGFloat(radians)))
+            .integral.size
+        UIGraphicsBeginImageContext(rotatedSize)
+        if let context = UIGraphicsGetCurrentContext() {
+            let origin = CGPoint(x: rotatedSize.width / 2.0, y: rotatedSize.height / 2.0)
+            context.translateBy(x: origin.x, y: origin.y)
+            context.rotate(by: radians)
+            draw(in: CGRect(x: -origin.y, y: -origin.x, width: size.width, height: size.height))
+            let rotatedImage = UIGraphicsGetImageFromCurrentImageContext()
+            return rotatedImage ?? self
+        }
+        return self
     }
 }

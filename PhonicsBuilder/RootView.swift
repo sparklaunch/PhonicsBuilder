@@ -25,7 +25,8 @@ struct RootView: View {
         }
         .sheet(isPresented: $modalShown) {
             let uiImage = Camera.loadPhoto()!
-            let image = Image(uiImage: uiImage)
+            let croppedPhoto = Camera.cropPhoto(uiImage)
+            let image = Image(uiImage: croppedPhoto)
             image
                 .resizable()
                 .rotationEffect(.degrees(-90))
