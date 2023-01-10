@@ -17,8 +17,36 @@ enum Camera {
             return layer as! AVCaptureVideoPreviewLayer
         }
     }
+    class PhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
+        func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+            guard error == nil else {
+                print("Error capturing photo: \(error!)")
+                return
+            }
+            guard let photoData = photo.fileDataRepresentation() else {
+                return
+            }
+            guard let uiImage = UIImage(data: photoData) else {
+                print("Unable to generate UIImage from image data.")
+                return
+            }
+            guard let jpegData = uiImage.jpegData(compressionQuality: 100) else {
+                return
+            }
+            let fileManager = FileManager.default
+            let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
+            let imageURL = url.appendingPathComponent("image.jpg")
+            let imagePath = imageURL.path
+            fileManager.createFile(atPath: imagePath, contents: jpegData)
+        }
+    }
+    static let pixelFormatType = kCVPixelFormatType_32BGRA
+    static let captureProcessor = PhotoCaptureProcessor()
+    static let photoOutput = AVCapturePhotoOutput()
     static let previewView = PreviewView()
     static let captureSession = AVCaptureSession()
+    static let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+    static let photoSettings = AVCapturePhotoSettings(format: [kCVPixelBufferPixelFormatTypeKey as String: pixelFormatType])
     static func verifyPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             case .authorized:
@@ -44,14 +72,12 @@ enum Camera {
     }
     static func prepareCapture() {
         captureSession.beginConfiguration()
-        let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
         guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!), captureSession.canAddInput(videoDeviceInput) else {
             return
         }
         captureSession.addInput(videoDeviceInput)
     }
     static func finishCapture() {
-        let photoOutput = AVCapturePhotoOutput()
         guard captureSession.canAddOutput(photoOutput) else {
             return
         }
@@ -67,6 +93,28 @@ enum Camera {
     }
     static func startSession() {
         captureSession.startRunning()
+    }
+    static func capturePhoto() {
+        photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
+    }
+    static func loadPhoto() throws -> UIImage? {
+        let fileManager = FileManager.default
+        let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        let photoURL = url.appendingPathComponent("image.jpg")
+        let photoPath = photoURL.path
+        guard fileManager.fileExists(atPath: photoPath) else {
+            return nil
+        }
+        do {
+            let data = try Data(contentsOf: photoURL)
+            guard let uiImage = UIImage(data: data) else {
+                return nil
+            }
+            return uiImage
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
     }
 }
 

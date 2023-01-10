@@ -18,6 +18,9 @@ struct RootView: View {
         .onAppear {
             Camera.verifyPermissions()
         }
+        .onTapGesture {
+            Camera.capturePhoto()
+        }
     }
 }
 
