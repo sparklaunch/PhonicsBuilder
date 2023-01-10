@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
+    @State private var modalShown = false
     var body: some View {
         ZStack {
             Preview()
@@ -20,6 +21,15 @@ struct RootView: View {
         }
         .onTapGesture {
             Camera.capturePhoto()
+            modalShown = true
+        }
+        .sheet(isPresented: $modalShown) {
+            let uiImage = Camera.loadPhoto()!
+            let image = Image(uiImage: uiImage)
+            image
+                .resizable()
+                .rotationEffect(.degrees(-90))
+                .scaledToFit()
         }
     }
 }

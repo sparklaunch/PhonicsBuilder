@@ -97,7 +97,7 @@ enum Camera {
     static func capturePhoto() {
         photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
     }
-    static func loadPhoto() throws -> UIImage? {
+    static func loadPhoto() -> UIImage? {
         let fileManager = FileManager.default
         let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
         let photoURL = url.appendingPathComponent("image.jpg")
@@ -105,16 +105,18 @@ enum Camera {
         guard fileManager.fileExists(atPath: photoPath) else {
             return nil
         }
-        do {
-            let data = try Data(contentsOf: photoURL)
-            guard let uiImage = UIImage(data: data) else {
-                return nil
-            }
-            return uiImage
-        } catch {
-            print(error.localizedDescription)
+        guard let data = try? Data(contentsOf: photoURL) else {
             return nil
         }
+        guard let uiImage = UIImage(data: data) else {
+            return nil
+        }
+        return uiImage
+    }
+    static func cropPhoto(_ uiImage: UIImage) -> UIImage {
+        let cropRect = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let croppedImage = uiImage.cgImage!.cropping(to: cropRect)
+        return UIImage(cgImage: croppedImage!)
     }
 }
 
