@@ -184,7 +184,7 @@ class Camera: ObservableObject {
         return body
     }
     static func sendRequest(uiImages: [UIImage]) {
-        let endPoint = URL(string: "http://192.168.0.102:5000/ocr")!
+        let endPoint = URL(string: "http://3.38.222.142/ocr")!
         let boundary = "Boundary-\(UUID().uuidString)"
         var request = URLRequest(url: endPoint)
         request.httpMethod = "POST"
