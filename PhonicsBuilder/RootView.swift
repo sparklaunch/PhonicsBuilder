@@ -9,28 +9,30 @@ import SwiftUI
 
 struct RootView: View {
     @State private var modalShown = false
+    @State private var modalReallyShown = false
+    @State private var images: [Image] = []
     var body: some View {
         ZStack {
             Preview()
                 .rotationEffect(.degrees(-90))
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
+            Button {
+                modalShown = true
+            } label: {
+                Text("See cropped images")
+            }
         }
         .onAppear {
             Camera.verifyPermissions()
         }
         .onTapGesture {
             Camera.capturePhoto()
-            modalShown = true
         }
-        .sheet(isPresented: $modalShown) {
-            let uiImage = Camera.loadPhoto()!
-            let croppedPhoto = Camera.cropPhoto(uiImage)
-            let image = Image(uiImage: croppedPhoto)
-            image
-                .resizable()
-                .rotationEffect(.degrees(-90))
-                .scaledToFit()
+        .onChange(of: modalShown) { newValue in
+            if modalShown {
+                let uiImages = Camera.loadImages()
+            }
         }
     }
 }
