@@ -55,11 +55,11 @@
 		3D6F964B296B796200FEFBF8 /* PhonicsBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				3D6F967C296F817500FEFBF8 /* Utils */,
 				3D6F965A296B79C800FEFBF8 /* Views */,
 				3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */,
 				3D6F9650296B796300FEFBF8 /* Assets.xcassets */,
 				3D6F9652296B796300FEFBF8 /* Preview Content */,
-				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
 			);
 			path = PhonicsBuilder;
 			sourceTree = "<group>";
@@ -79,6 +79,14 @@
 				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		3D6F967C296F817500FEFBF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
