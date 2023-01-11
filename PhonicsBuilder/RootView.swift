@@ -14,11 +14,11 @@ struct RootView: View {
             Preview()
                 .rotationEffect(.degrees(-90))
                 .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
             Text(camera.results.isEmpty ? "No Input" : camera.results.joined(separator: ", "))
                 .font(.largeTitle)
                 .foregroundColor(.white)
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear {
             Camera.verifyPermissions()
         }
