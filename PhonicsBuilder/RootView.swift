@@ -8,20 +8,16 @@
 import SwiftUI
 
 struct RootView: View {
-    @State private var modalShown = false
-    @State private var modalReallyShown = false
-    @State private var images: [Image] = []
+    @EnvironmentObject var camera: Camera
     var body: some View {
         ZStack {
             Preview()
                 .rotationEffect(.degrees(-90))
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-            Button {
-                modalShown = true
-            } label: {
-                Text("See cropped images")
-            }
+            Text(camera.results.isEmpty ? "No Input" : camera.results.joined(separator: ", "))
+                .font(.largeTitle)
+                .foregroundColor(.white)
         }
         .onAppear {
             Camera.verifyPermissions()
@@ -29,16 +25,12 @@ struct RootView: View {
         .onTapGesture {
             Camera.capturePhoto()
         }
-        .onChange(of: modalShown) { newValue in
-            if modalShown {
-                let uiImages = Camera.loadImages()
-            }
-        }
     }
 }
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView()
+            .environmentObject(Camera())
     }
 }

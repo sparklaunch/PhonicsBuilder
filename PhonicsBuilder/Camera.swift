@@ -8,7 +8,9 @@
 import SwiftUI
 import AVFoundation
 
-enum Camera {
+class Camera: ObservableObject {
+    @Published public var results: [String] = []
+    public static let shared = Camera()
     class PreviewView: UIView {
         override class var layerClass: AnyClass {
             return AVCaptureVideoPreviewLayer.self
@@ -203,6 +205,8 @@ enum Camera {
                     }
                     print("Responded with...")
                     print(jsonObject)
+                    let results = jsonObject["result"]! as! [String]
+                    Camera.shared.results = results
                 } catch {
                     print(error.localizedDescription)
                 }
