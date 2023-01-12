@@ -8,13 +8,13 @@ struct RootView: View {
                 Preview()
                     .rotationEffect(.degrees(-90))
                     .scaledToFill()
-                Text(camera.results.isEmpty ? "No Input" : camera.results.joined(separator: ", "))
-                    .font(.custom("Poppins", size: 32, relativeTo: .largeTitle))
-                    .foregroundColor(.white)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .overlay(
-                BackdropView(height: geometry.size.height)
+                ZStack {
+                    BackdropView(height: geometry.size.height)
+                    ChunksView()
+                }
                 , alignment: .center)
         }
         .edgesIgnoringSafeArea(.all)
