@@ -9,7 +9,7 @@ struct RootView: View {
                     .rotationEffect(.degrees(-90))
                     .scaledToFill()
                 Text(camera.results.isEmpty ? "No Input" : camera.results.joined(separator: ", "))
-                    .font(.largeTitle)
+                    .font(.custom("Poppins", size: 32, relativeTo: .largeTitle))
                     .foregroundColor(.white)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
