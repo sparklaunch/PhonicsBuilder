@@ -39,7 +39,7 @@ class Camera: ObservableObject {
                 let imagePath = imageURL.path
                 fileManager.createFile(atPath: imagePath, contents: data)
             }
-            print("All three jpegs saved.")
+            print("All three JPEG images were saved.")
             let uiImages = Camera.loadImages()
             Camera.sendRequest(uiImages: uiImages)
         }
@@ -59,8 +59,13 @@ class Camera: ObservableObject {
             case .notDetermined:
                 requestVideoPermission()
             case .denied:
+                print("User denied permissions.")
                 return
             case .restricted:
+                print("Permissions restricted.")
+                return
+            default:
+                print("Unknown permissions option.")
                 return
         }
     }
@@ -102,7 +107,7 @@ class Camera: ObservableObject {
     static func capturePhoto() {
         let photoSettings = AVCapturePhotoSettings(format: [kCVPixelBufferPixelFormatTypeKey as String: pixelFormatType])
         photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
-        print("Captured.")
+        print("Photo captured.")
     }
     static func loadPhoto() -> UIImage? {
         let fileManager = FileManager.default
@@ -114,11 +119,11 @@ class Camera: ObservableObject {
             return nil
         }
         guard let data = try? Data(contentsOf: photoURL) else {
-            print("Data conversion of image failed.")
+            print("Conversion from URL to Data failed.")
             return nil
         }
         guard let uiImage = UIImage(data: data) else {
-            print("Data to UIImage failed.")
+            print("Conversion from Data to UIImage failed.")
             return nil
         }
         return uiImage
@@ -132,7 +137,7 @@ class Camera: ObservableObject {
         var cropResults: [UIImage] = []
         for cropRect in [firstCropRect, secondCropRect, thirdCropRect] {
             guard let cgImage = uiImage.cgImage else {
-                print("UIImage to CGImage for cropping failed.")
+                print("Conversion from UIImage to CGImage for cropping failed.")
                 return [UIImage()]
             }
             guard let result = cgImage.cropping(to: cropRect) else {
@@ -214,7 +219,7 @@ struct Preview: UIViewRepresentable {
         return Camera.getPreview()
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+        // PASS.
     }
 }
 
