@@ -17,6 +17,7 @@
 		3D6F9680296FA98700FEFBF8 /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F967F296FA98700FEFBF8 /* DimmedView.swift */; };
 		3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */; };
 		3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */; };
+		3D6F9687296FAD6F00FEFBF8 /* BackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3D6F967F296FA98700FEFBF8 /* DimmedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
 		3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
 		3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryCornerView.swift; sourceTree = "<group>"; };
+		3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3D6F967F296FA98700FEFBF8 /* DimmedView.swift */,
 				3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */,
 				3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */,
+				3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */,
 			);
 			name = Boundary;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6F9680296FA98700FEFBF8 /* DimmedView.swift in Sources */,
+				3D6F9687296FAD6F00FEFBF8 /* BackdropView.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
