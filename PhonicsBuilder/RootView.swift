@@ -14,7 +14,11 @@ struct RootView: View {
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .overlay(
-                BoundaryView(height: geometry.size.height)
+                VStack(spacing: 0) {
+                    DimmedView(height: geometry.size.height)
+                    BoundaryView(height: geometry.size.height)
+                    DimmedView(height: geometry.size.height)
+                }
                 , alignment: .center)
         }
         .edgesIgnoringSafeArea(.all)
