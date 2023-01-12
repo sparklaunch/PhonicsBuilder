@@ -1,10 +1,3 @@
-//
-//  Camera.swift
-//  PhonicsBuilder
-//
-//  Created by 신정훈 on 2023/01/09.
-//
-
 import SwiftUI
 import AVFoundation
 
