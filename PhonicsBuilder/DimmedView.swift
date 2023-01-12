@@ -1,10 +1,3 @@
-//
-//  DimmedView.swift
-//  PhonicsBuilder
-//
-//  Created by 신정훈 on 2023/01/12.
-//
-
 import SwiftUI
 
 struct DimmedView: View {

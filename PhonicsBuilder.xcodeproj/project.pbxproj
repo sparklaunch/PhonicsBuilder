@@ -15,6 +15,8 @@
 		3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F967A296BD2DB00FEFBF8 /* Camera.swift */; };
 		3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */; };
 		3D6F9680296FA98700FEFBF8 /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F967F296FA98700FEFBF8 /* DimmedView.swift */; };
+		3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */; };
+		3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		3D6F967A296BD2DB00FEFBF8 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryView.swift; sourceTree = "<group>"; };
 		3D6F967F296FA98700FEFBF8 /* DimmedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
+		3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
 				3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */,
 				3D6F967F296FA98700FEFBF8 /* DimmedView.swift */,
+				3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
+				3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6F9680296FA98700FEFBF8 /* DimmedView.swift in Sources */,
+				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
+				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
 				3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */,
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
