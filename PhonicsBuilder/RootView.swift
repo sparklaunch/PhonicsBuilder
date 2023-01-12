@@ -4,7 +4,7 @@ struct RootView: View {
     @EnvironmentObject var camera: Camera
     var body: some View {
         GeometryReader { geometry in
-            ZStack {
+            ZStack(alignment: .center) {
                 Preview()
                     .rotationEffect(.degrees(-90))
                     .scaledToFill()
@@ -13,6 +13,9 @@ struct RootView: View {
                     .foregroundColor(.white)
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
+            .overlay(
+                BoundaryView(height: geometry.size.height)
+                , alignment: .center)
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear {
