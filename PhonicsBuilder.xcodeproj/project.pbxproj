@@ -83,11 +83,9 @@
 		3D6F965A296B79C800FEFBF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D6F9685296FAD1600FEFBF8 /* Boundary */,
 				3D6F964E296B796200FEFBF8 /* ContentView.swift */,
 				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
-				3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */,
-				3D6F967F296FA98700FEFBF8 /* DimmedView.swift */,
-				3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -99,6 +97,16 @@
 				3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		3D6F9685296FAD1600FEFBF8 /* Boundary */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F967F296FA98700FEFBF8 /* DimmedView.swift */,
+				3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */,
+				3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */,
+			);
+			name = Boundary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
