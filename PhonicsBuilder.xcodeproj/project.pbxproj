@@ -114,12 +114,10 @@
 		3D6F965A296B79C800FEFBF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DD87BE4297143FF00493874 /* Main */,
 				3D6F969B29713D6800FEFBF8 /* IconsView */,
 				3D6F968F296FE2FB00FEFBF8 /* Chunks */,
 				3D6F9685296FAD1600FEFBF8 /* Boundary */,
-				3D6F964E296B796200FEFBF8 /* ContentView.swift */,
-				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
-				3D6F96A029713F1D00FEFBF8 /* PreView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -198,6 +196,16 @@
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 			);
 			name = Animations;
+			sourceTree = "<group>";
+		};
+		3DD87BE4297143FF00493874 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F964E296B796200FEFBF8 /* ContentView.swift */,
+				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
+				3D6F96A029713F1D00FEFBF8 /* PreView.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
