@@ -2,9 +2,9 @@ import SwiftUI
 import Lottie
 
 struct LottieView: UIViewRepresentable {
-    var name : String
-    var loopMode: LottieLoopMode
-    init(jsonName: String = "", loopMode : LottieLoopMode = .autoReverse) {
+    let name: String
+    let loopMode: LottieLoopMode
+    init(jsonName: String = "", loopMode: LottieLoopMode = .autoReverse) {
         self.name = jsonName
         self.loopMode = loopMode
     }
@@ -19,10 +19,7 @@ struct LottieView: UIViewRepresentable {
         animationView.backgroundBehavior = .pauseAndRestore
         animationView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(animationView)
-        NSLayoutConstraint.activate([
-            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
-        ])
+        NSLayoutConstraint.activate([animationView.heightAnchor.constraint(equalTo: view.heightAnchor), animationView.widthAnchor.constraint(equalTo: view.widthAnchor)])
         return view
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
