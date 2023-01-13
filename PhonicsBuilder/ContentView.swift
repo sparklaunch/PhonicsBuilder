@@ -13,7 +13,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                 withAnimation {
                     isLoading.toggle()
                 }

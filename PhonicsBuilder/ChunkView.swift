@@ -5,6 +5,6 @@ struct ChunkView: View {
     var body: some View {
         Text(text)
             .font(.custom("Poppins", size: 150, relativeTo: .largeTitle))
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 }

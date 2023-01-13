@@ -8,6 +8,14 @@ struct RootView: View {
                 Preview()
                     .rotationEffect(.degrees(-90))
                     .scaledToFill()
+                Button {
+                    withAnimation {
+                        camera.results = ["br", "a", "mp"]                        
+                    }
+                } label: {
+                    Text("Test now")
+                        .font(.largeTitle)
+                }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .overlay(
