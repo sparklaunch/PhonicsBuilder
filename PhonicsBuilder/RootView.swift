@@ -5,9 +5,7 @@ struct RootView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .center) {
-                Preview()
-                    .rotationEffect(.degrees(-90))
-                    .scaledToFill()
+                PreView()
                 Button {
                     withAnimation {
                         camera.results = ["br", "a", "mp"]                        
