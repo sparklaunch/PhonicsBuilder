@@ -5,7 +5,7 @@ import Lottie
 struct LottieView: UIViewRepresentable {
     var name : String
     var loopMode: LottieLoopMode
-    init(jsonName: String = "", loopMode : LottieLoopMode = .loop) {
+    init(jsonName: String = "", loopMode : LottieLoopMode = .autoReverse) {
         self.name = jsonName
         self.loopMode = loopMode
     }
