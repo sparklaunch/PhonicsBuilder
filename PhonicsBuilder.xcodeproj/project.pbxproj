@@ -30,6 +30,7 @@
 		3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F96A029713F1D00FEFBF8 /* PreView.swift */; };
 		3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDA2971416400493874 /* ViewExtensions.swift */; };
 		3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */; };
+		3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDF2971431600493874 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		3D6F96A029713F1D00FEFBF8 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 		3DD87BDA2971416400493874 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtensions.swift; sourceTree = "<group>"; };
+		3DD87BDF2971431600493874 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */,
 				3DD87BDA2971416400493874 /* ViewExtensions.swift */,
+				3DD87BDF2971431600493874 /* UIImageExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				3D6F9680296FA98700FEFBF8 /* DimmedView.swift in Sources */,
 				3D6F9687296FAD6F00FEFBF8 /* BackdropView.swift in Sources */,
+				3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
