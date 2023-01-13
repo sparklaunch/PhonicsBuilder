@@ -22,6 +22,9 @@ struct RootView: View {
                 ZStack {
                     BackdropView(height: geometry.size.height)
                     ChunksView()
+                    if camera.iconsShown {
+                        IconsView()
+                    }
                 }
                 , alignment: .center)
         }
@@ -31,6 +34,11 @@ struct RootView: View {
         }
         .onTapGesture {
             Camera.capturePhoto()
+        }
+        .onChange(of: camera.results) { _ in
+            if !camera.results.isEmpty {
+                camera.iconsShown = true
+            }
         }
     }
 }

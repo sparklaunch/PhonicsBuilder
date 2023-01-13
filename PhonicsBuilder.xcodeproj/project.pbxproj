@@ -22,6 +22,9 @@
 		3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968B296FDA4F00FEFBF8 /* ChunksView.swift */; };
 		3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968D296FE2A500FEFBF8 /* ChunkView.swift */; };
 		3D6F96942970E6E200FEFBF8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3D6F96932970E6E200FEFBF8 /* Lottie */; };
+		3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F96952970E7F600FEFBF8 /* LottieView.swift */; };
+		3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F96972970E87800FEFBF8 /* Microphone.json */; };
+		3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F96992970EA9900FEFBF8 /* IconsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		3D6F968A296FD92000FEFBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D6F968B296FDA4F00FEFBF8 /* ChunksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunksView.swift; sourceTree = "<group>"; };
 		3D6F968D296FE2A500FEFBF8 /* ChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkView.swift; sourceTree = "<group>"; };
+		3D6F96952970E7F600FEFBF8 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		3D6F96972970E87800FEFBF8 /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Microphone.json; sourceTree = "<group>"; };
+		3D6F96992970EA9900FEFBF8 /* IconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 				3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */,
 				3D6F9650296B796300FEFBF8 /* Assets.xcassets */,
 				3D6F9652296B796300FEFBF8 /* Preview Content */,
+				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 			);
 			path = PhonicsBuilder;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 				3D6F9685296FAD1600FEFBF8 /* Boundary */,
 				3D6F964E296B796200FEFBF8 /* ContentView.swift */,
 				3D6F9671296B9EEA00FEFBF8 /* RootView.swift */,
+				3D6F96992970EA9900FEFBF8 /* IconsView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			children = (
 				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
 				3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */,
+				3D6F96952970E7F600FEFBF8 /* LottieView.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 				3D6F9654296B796300FEFBF8 /* Preview Assets.xcassets in Resources */,
 				3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */,
 				3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */,
+				3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +228,11 @@
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
 				3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */,
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
+				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
+				3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

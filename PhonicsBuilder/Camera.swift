@@ -3,6 +3,7 @@ import AVFoundation
 
 class Camera: ObservableObject {
     @Published public var results: [String] = []
+    @Published public var iconsShown = false
     public static let shared = Camera()
     class PreviewView: UIView {
         override class var layerClass: AnyClass {
