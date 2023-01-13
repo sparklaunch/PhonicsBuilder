@@ -13,8 +13,10 @@ struct RootView: View {
                         camera.results = ["br", "a", "mp"]                        
                     }
                 } label: {
-                    Text("Test now")
-                        .font(.largeTitle)
+                    if camera.results.isEmpty {
+                        Text("Test now")
+                            .font(.largeTitle)                       
+                    }
                 }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
