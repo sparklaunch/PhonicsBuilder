@@ -21,6 +21,7 @@
 		3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9688296FD8FE00FEFBF8 /* Poppins.ttf */; };
 		3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968B296FDA4F00FEFBF8 /* ChunksView.swift */; };
 		3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968D296FE2A500FEFBF8 /* ChunkView.swift */; };
+		3D6F96942970E6E200FEFBF8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3D6F96932970E6E200FEFBF8 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6F96942970E6E200FEFBF8 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = PhonicsBuilder;
+			packageProductDependencies = (
+				3D6F96932970E6E200FEFBF8 /* Lottie */,
+			);
 			productName = PhonicsBuilder;
 			productReference = 3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 3D6F9640296B796100FEFBF8;
+			packageReferences = (
+				3D6F96922970E6E200FEFBF8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 3D6F964A296B796200FEFBF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D6F96922970E6E200FEFBF8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D6F96932970E6E200FEFBF8 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D6F96922970E6E200FEFBF8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D6F9641296B796100FEFBF8 /* Project object */;
 }
