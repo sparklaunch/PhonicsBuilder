@@ -92,12 +92,12 @@
 		3D6F964B296B796200FEFBF8 /* PhonicsBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				3DD87BE3297143CF00493874 /* Animations */,
 				3DD87BE22971439D00493874 /* App */,
 				3DD87BE12971437C00493874 /* Fonts */,
 				3D6F967C296F817500FEFBF8 /* Utils */,
 				3DD87BDE297142C100493874 /* Extensions */,
 				3D6F965A296B79C800FEFBF8 /* Views */,
-				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 				3D6F9652296B796300FEFBF8 /* Preview Content */,
 			);
 			path = PhonicsBuilder;
@@ -190,6 +190,14 @@
 				3D6F968A296FD92000FEFBF8 /* Info.plist */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		3DD87BE3297143CF00493874 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F96972970E87800FEFBF8 /* Microphone.json */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
