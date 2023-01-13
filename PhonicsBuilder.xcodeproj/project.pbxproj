@@ -29,6 +29,7 @@
 		3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F969E29713E5A00FEFBF8 /* OverlayView.swift */; };
 		3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F96A029713F1D00FEFBF8 /* PreView.swift */; };
 		3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDA2971416400493874 /* ViewExtensions.swift */; };
+		3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		3D6F969E29713E5A00FEFBF8 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		3D6F96A029713F1D00FEFBF8 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
 		3DD87BDA2971416400493874 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3D6F968A296FD92000FEFBF8 /* Info.plist */,
 				3D6F9688296FD8FE00FEFBF8 /* Poppins.ttf */,
 				3D6F967C296F817500FEFBF8 /* Utils */,
+				3DD87BDE297142C100493874 /* Extensions */,
 				3D6F965A296B79C800FEFBF8 /* Views */,
 				3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */,
 				3D6F9650296B796300FEFBF8 /* Assets.xcassets */,
@@ -127,7 +130,6 @@
 				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
 				3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */,
 				3D6F96952970E7F600FEFBF8 /* LottieView.swift */,
-				3DD87BDA2971416400493874 /* ViewExtensions.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -160,6 +162,15 @@
 				3D6F969C29713D7F00FEFBF8 /* MicrophoneView.swift */,
 			);
 			name = IconsView;
+			sourceTree = "<group>";
+		};
+		3DD87BDE297142C100493874 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */,
+				3DD87BDA2971416400493874 /* ViewExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				3D6F9687296FAD6F00FEFBF8 /* BackdropView.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
+				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
 				3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */,

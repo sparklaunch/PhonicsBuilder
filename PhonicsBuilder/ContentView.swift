@@ -21,13 +21,3 @@ struct ContentView: View {
         }
     }
 }
-
-extension ContentView {
-    var splashScreenView: some View {
-        ZStack {
-            Color("MainColor")
-            Image("Splash")
-        }
-        .edgesIgnoringSafeArea(.all)
-    }
-}
