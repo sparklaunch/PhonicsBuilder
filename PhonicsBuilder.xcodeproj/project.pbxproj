@@ -86,8 +86,8 @@
 				3D6F965A296B79C800FEFBF8 /* Views */,
 				3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */,
 				3D6F9650296B796300FEFBF8 /* Assets.xcassets */,
-				3D6F9652296B796300FEFBF8 /* Preview Content */,
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
+				3D6F9652296B796300FEFBF8 /* Preview Content */,
 			);
 			path = PhonicsBuilder;
 			sourceTree = "<group>";

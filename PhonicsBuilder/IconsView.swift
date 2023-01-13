@@ -9,7 +9,7 @@ struct IconsView: View {
                 HStack(spacing: 0) {
                     Spacer()
                     Button {
-                        
+                        // TODO: MICROPHONE BUTTON.
                     } label: {
                         LottieView(jsonName: "Microphone")
                             .frame(width: 100, height: 100)
