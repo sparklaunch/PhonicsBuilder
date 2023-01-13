@@ -26,6 +26,7 @@
 		3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F96972970E87800FEFBF8 /* Microphone.json */; };
 		3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F96992970EA9900FEFBF8 /* IconsView.swift */; };
 		3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F969C29713D7F00FEFBF8 /* MicrophoneView.swift */; };
+		3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F969E29713E5A00FEFBF8 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		3D6F96972970E87800FEFBF8 /* Microphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Microphone.json; sourceTree = "<group>"; };
 		3D6F96992970EA9900FEFBF8 /* IconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsView.swift; sourceTree = "<group>"; };
 		3D6F969C29713D7F00FEFBF8 /* MicrophoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneView.swift; sourceTree = "<group>"; };
+		3D6F969E29713E5A00FEFBF8 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */,
 				3D6F967D296FA57B00FEFBF8 /* BoundaryView.swift */,
 				3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */,
+				3D6F969E29713E5A00FEFBF8 /* OverlayView.swift */,
 			);
 			name = Boundary;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */,
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
+				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,

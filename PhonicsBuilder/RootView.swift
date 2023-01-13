@@ -15,20 +15,12 @@ struct RootView: View {
                 } label: {
                     if camera.results.isEmpty {
                         Text("Test now")
-                            .font(.largeTitle)                       
+                            .font(.largeTitle)
                     }
                 }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
-            .overlay(
-                ZStack {
-                    BackdropView(height: geometry.size.height)
-                    ChunksView()
-                    if camera.iconsShown {
-                        IconsView()
-                    }
-                }
-                , alignment: .center)
+            .overlay(OverlayView(iconsShown: $camera.iconsShown, height: geometry.size.height), alignment: .center)
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear {
