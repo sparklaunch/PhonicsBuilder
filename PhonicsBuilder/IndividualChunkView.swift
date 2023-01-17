@@ -16,18 +16,25 @@ struct IndividualChunkView: View {
         }
     }
     var body: some View {
-        ZStack {
-            Color.white
-            Text(text)
-                .font(.custom("Poppins", size: 100))
-            .foregroundColor(.black)
+        VStack(spacing: 20) {
+            ZStack {
+                Color.white
+                Text(text)
+                    .font(.custom("Poppins", size: 100))
+                    .foregroundColor(.black)
+            }
+            .frame(width: 250, height: 250)
+            .overlay(
+                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                    .stroke(borderColor, lineWidth: 20)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 30))
+            .shadow(radius: 10)
+            HStack {
+                Star(filled: score >= 1)
+                Star(filled: score >= 2)
+                Star(filled: score >= 3)
+            }
         }
-        .frame(width: 250, height: 250)
-        .overlay(
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(borderColor, lineWidth: 20)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: 30))
-        .shadow(radius: 10)
     }
 }
