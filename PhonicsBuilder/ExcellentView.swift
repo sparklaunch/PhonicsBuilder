@@ -6,7 +6,15 @@ struct ExcellentView: View {
             Color("ExcellentColor")
             VStack {
                 ExcellentText()
+                Spacer()
             }
         }
+        .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct ExcellentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ExcellentView()
     }
 }

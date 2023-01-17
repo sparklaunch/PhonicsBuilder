@@ -6,7 +6,8 @@ struct ExcellentText: View {
         Text("Excellent")
             .font(.custom("Poppins", size: 100))
             .foregroundColor(Color("MainColor"))
-            .scaleEffect(bouncing ? 1.0 : 1.5)
+            .padding()
+            .scaleEffect(bouncing ? 1.0 : 1.2)
             .animation(.linear(duration: 0.5).repeatForever(autoreverses: true), value: bouncing)
             .onAppear {
                 bouncing = true
