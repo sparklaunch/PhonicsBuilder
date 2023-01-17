@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ListeningMicrophone: View {
+    @EnvironmentObject private var globalState: GlobalState
     @State private var bouncing = false
     var body: some View {
         LottieView(jsonName: "Listening")
@@ -8,6 +9,11 @@ struct ListeningMicrophone: View {
             .animation(.linear(duration: 0.5).repeatForever(autoreverses: true), value: bouncing)
             .onAppear {
                 bouncing = true
+            }
+            .onTapGesture {
+                withAnimation {
+                    globalState.finishedRecording = true
+                }
             }
     }
 }
