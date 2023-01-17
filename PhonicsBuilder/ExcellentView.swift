@@ -6,6 +6,7 @@ struct ExcellentView: View {
             Color("ExcellentColor")
             VStack {
                 ExcellentText()
+                ChunksContainerView()
                 Spacer()
             }
         }

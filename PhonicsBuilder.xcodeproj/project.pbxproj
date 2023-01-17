@@ -46,6 +46,8 @@
 		9036BBA42976B7DF0006C850 /* GoodText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA32976B7DF0006C850 /* GoodText.swift */; };
 		9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA62976B8320006C850 /* NiceTryView.swift */; };
 		9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA82976B8510006C850 /* NiceTryText.swift */; };
+		9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBAC2976BAEC0006C850 /* ChunksContainerView.swift */; };
+		9036BBAF2976BB390006C850 /* IndividualChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBAE2976BB390006C850 /* IndividualChunkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		9036BBA32976B7DF0006C850 /* GoodText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodText.swift; sourceTree = "<group>"; };
 		9036BBA62976B8320006C850 /* NiceTryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryView.swift; sourceTree = "<group>"; };
 		9036BBA82976B8510006C850 /* NiceTryText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryText.swift; sourceTree = "<group>"; };
+		9036BBAC2976BAEC0006C850 /* ChunksContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunksContainerView.swift; sourceTree = "<group>"; };
+		9036BBAE2976BB390006C850 /* IndividualChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualChunkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 				9036BBA02976B7B10006C850 /* Good */,
 				9036BB9D2976B7090006C850 /* Excellent */,
 				9036BB992976B5920006C850 /* ResultsView.swift */,
+				9036BBAC2976BAEC0006C850 /* ChunksContainerView.swift */,
+				9036BBAE2976BB390006C850 /* IndividualChunkView.swift */,
 			);
 			name = Results;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
+				9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */,
 				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
@@ -399,6 +406,7 @@
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
 				9036BB972976B4A70006C850 /* LoadingView.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
+				9036BBAF2976BB390006C850 /* IndividualChunkView.swift in Sources */,
 				9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */,
 				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
