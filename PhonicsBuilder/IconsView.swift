@@ -7,8 +7,15 @@ struct IconsView: View {
                 Spacer()
                 HStack(spacing: 0) {
                     Spacer()
-                    MicrophoneView()
+                    MegaphoneView()
                     Spacer()
+                }
+            }
+            VStack(spacing: 0) {
+                Spacer()
+                HStack(spacing: 0) {
+                    Spacer()
+                    MicrophoneView()
                 }
             }
         }

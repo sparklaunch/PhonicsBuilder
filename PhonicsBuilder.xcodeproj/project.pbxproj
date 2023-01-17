@@ -31,6 +31,8 @@
 		3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDA2971416400493874 /* ViewExtensions.swift */; };
 		3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */; };
 		3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDF2971431600493874 /* UIImageExtensions.swift */; };
+		9036BB882976AB5D0006C850 /* Megaphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB872976AB5D0006C850 /* Megaphone.json */; };
+		9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB892976AB8E0006C850 /* MegaphoneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		3DD87BDA2971416400493874 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		3DD87BDC2971429A00493874 /* ContentViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtensions.swift; sourceTree = "<group>"; };
 		3DD87BDF2971431600493874 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		9036BB872976AB5D0006C850 /* Megaphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Megaphone.json; sourceTree = "<group>"; };
+		9036BB892976AB8E0006C850 /* MegaphoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaphoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			children = (
 				3D6F96992970EA9900FEFBF8 /* IconsView.swift */,
 				3D6F969C29713D7F00FEFBF8 /* MicrophoneView.swift */,
+				9036BB892976AB8E0006C850 /* MegaphoneView.swift */,
 			);
 			name = IconsView;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
+				9036BB872976AB5D0006C850 /* Megaphone.json */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			files = (
 				3D6F9654296B796300FEFBF8 /* Preview Assets.xcassets in Resources */,
 				3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */,
+				9036BB882976AB5D0006C850 /* Megaphone.json in Resources */,
 				3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */,
 				3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */,
 			);
@@ -299,6 +306,7 @@
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
+				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
