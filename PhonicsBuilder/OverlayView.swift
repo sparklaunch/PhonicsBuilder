@@ -14,6 +14,9 @@ struct OverlayView: View {
             if globalState.isRecording {
                 RecordingView()
             }
+            if globalState.finishedRecording {
+                LoadingView()
+            }
         }
     }
 }

@@ -38,6 +38,7 @@
 		9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB902976B26E0006C850 /* SpeakNowText.swift */; };
 		9036BB932976B2FC0006C850 /* Listening.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB922976B2FC0006C850 /* Listening.json */; };
 		9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB942976B34E0006C850 /* ListeningMicrophone.swift */; };
+		9036BB972976B4A70006C850 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB962976B4A70006C850 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		9036BB902976B26E0006C850 /* SpeakNowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakNowText.swift; sourceTree = "<group>"; };
 		9036BB922976B2FC0006C850 /* Listening.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Listening.json; sourceTree = "<group>"; };
 		9036BB942976B34E0006C850 /* ListeningMicrophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningMicrophone.swift; sourceTree = "<group>"; };
+		9036BB962976B4A70006C850 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				9036BB8D2976AEBC0006C850 /* RecordingView.swift */,
 				9036BB902976B26E0006C850 /* SpeakNowText.swift */,
 				9036BB942976B34E0006C850 /* ListeningMicrophone.swift */,
+				9036BB962976B4A70006C850 /* LoadingView.swift */,
 			);
 			name = Recording;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
+				9036BB972976B4A70006C850 /* LoadingView.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
 				9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */,
 				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
