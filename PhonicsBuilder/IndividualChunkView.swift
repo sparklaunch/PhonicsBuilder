@@ -3,6 +3,18 @@ import SwiftUI
 struct IndividualChunkView: View {
     let text: String
     let score: Int
+    var borderColor: Color {
+        switch score {
+            case 3:
+                return Color("ExcellentColor")
+            case 2:
+                return Color("GoodColor")
+            case 0, 1:
+                return Color("NiceTryColor")
+            default:
+                return Color("ExcellentColor")
+        }
+    }
     var body: some View {
         ZStack {
             Color.white
@@ -13,7 +25,7 @@ struct IndividualChunkView: View {
         .frame(width: 250, height: 250)
         .overlay(
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(Color("ExcellentColor"), lineWidth: 10)
+                .stroke(borderColor, lineWidth: 20)
         )
         .clipShape(RoundedRectangle(cornerRadius: 30))
         .shadow(radius: 10)
