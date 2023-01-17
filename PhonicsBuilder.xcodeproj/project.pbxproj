@@ -35,6 +35,7 @@
 		9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB892976AB8E0006C850 /* MegaphoneView.swift */; };
 		9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8B2976ADD90006C850 /* GlobalState.swift */; };
 		9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8D2976AEBC0006C850 /* RecordingView.swift */; };
+		9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB902976B26E0006C850 /* SpeakNowText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		9036BB892976AB8E0006C850 /* MegaphoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaphoneView.swift; sourceTree = "<group>"; };
 		9036BB8B2976ADD90006C850 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 		9036BB8D2976AEBC0006C850 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		9036BB902976B26E0006C850 /* SpeakNowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakNowText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +124,11 @@
 		3D6F965A296B79C800FEFBF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9036BB8F2976B2580006C850 /* Recording */,
 				3DD87BE4297143FF00493874 /* Main */,
 				3D6F969B29713D6800FEFBF8 /* IconsView */,
 				3D6F968F296FE2FB00FEFBF8 /* Chunks */,
 				3D6F9685296FAD1600FEFBF8 /* Boundary */,
-				9036BB8D2976AEBC0006C850 /* RecordingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -218,6 +220,15 @@
 				3D6F96A029713F1D00FEFBF8 /* PreView.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		9036BB8F2976B2580006C850 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				9036BB8D2976AEBC0006C850 /* RecordingView.swift */,
+				9036BB902976B26E0006C850 /* SpeakNowText.swift */,
+			);
+			name = Recording;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
+				9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */,
 				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
