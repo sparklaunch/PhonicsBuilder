@@ -51,6 +51,7 @@
 		9036BBB12976D98E0006C850 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB02976D98E0006C850 /* Star.swift */; };
 		9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB32976DBB00006C850 /* ExcellentBackground.swift */; };
 		9036BBB62976DC550006C850 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB52976DC550006C850 /* Frog.swift */; };
+		9036BBB82976DCF80006C850 /* Elephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB72976DCF80006C850 /* Elephant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		9036BBB02976D98E0006C850 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		9036BBB32976DBB00006C850 /* ExcellentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentBackground.swift; sourceTree = "<group>"; };
 		9036BBB52976DC550006C850 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
+		9036BBB72976DCF80006C850 /* Elephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elephant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				9036BB9E2976B71D0006C850 /* ExcellentText.swift */,
 				9036BBB32976DBB00006C850 /* ExcellentBackground.swift */,
 				9036BBB52976DC550006C850 /* Frog.swift */,
+				9036BBB72976DCF80006C850 /* Elephant.swift */,
 			);
 			name = Excellent;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
 				9036BBA42976B7DF0006C850 /* GoodText.swift in Sources */,
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
+				9036BBB82976DCF80006C850 /* Elephant.swift in Sources */,
 				9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				9036BB9C2976B6AE0006C850 /* ExcellentView.swift in Sources */,
