@@ -44,6 +44,8 @@
 		9036BB9F2976B71D0006C850 /* ExcellentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB9E2976B71D0006C850 /* ExcellentText.swift */; };
 		9036BBA22976B7BE0006C850 /* GoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA12976B7BE0006C850 /* GoodView.swift */; };
 		9036BBA42976B7DF0006C850 /* GoodText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA32976B7DF0006C850 /* GoodText.swift */; };
+		9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA62976B8320006C850 /* NiceTryView.swift */; };
+		9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBA82976B8510006C850 /* NiceTryText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		9036BB9E2976B71D0006C850 /* ExcellentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentText.swift; sourceTree = "<group>"; };
 		9036BBA12976B7BE0006C850 /* GoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodView.swift; sourceTree = "<group>"; };
 		9036BBA32976B7DF0006C850 /* GoodText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodText.swift; sourceTree = "<group>"; };
+		9036BBA62976B8320006C850 /* NiceTryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryView.swift; sourceTree = "<group>"; };
+		9036BBA82976B8510006C850 /* NiceTryText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,7 @@
 		9036BB982976B57E0006C850 /* Results */ = {
 			isa = PBXGroup;
 			children = (
+				9036BBA52976B8260006C850 /* NiceTry */,
 				9036BBA02976B7B10006C850 /* Good */,
 				9036BB9D2976B7090006C850 /* Excellent */,
 				9036BB992976B5920006C850 /* ResultsView.swift */,
@@ -277,6 +282,15 @@
 				9036BBA32976B7DF0006C850 /* GoodText.swift */,
 			);
 			name = Good;
+			sourceTree = "<group>";
+		};
+		9036BBA52976B8260006C850 /* NiceTry */ = {
+			isa = PBXGroup;
+			children = (
+				9036BBA62976B8320006C850 /* NiceTryView.swift */,
+				9036BBA82976B8510006C850 /* NiceTryText.swift */,
+			);
+			name = NiceTry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,9 +388,11 @@
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
 				9036BBA42976B7DF0006C850 /* GoodText.swift in Sources */,
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
+				9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				9036BB9C2976B6AE0006C850 /* ExcellentView.swift in Sources */,
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
+				9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */,
 				9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */,
 				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
