@@ -36,6 +36,8 @@
 		9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8B2976ADD90006C850 /* GlobalState.swift */; };
 		9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8D2976AEBC0006C850 /* RecordingView.swift */; };
 		9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB902976B26E0006C850 /* SpeakNowText.swift */; };
+		9036BB932976B2FC0006C850 /* Listening.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB922976B2FC0006C850 /* Listening.json */; };
+		9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB942976B34E0006C850 /* ListeningMicrophone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		9036BB8B2976ADD90006C850 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 		9036BB8D2976AEBC0006C850 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		9036BB902976B26E0006C850 /* SpeakNowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakNowText.swift; sourceTree = "<group>"; };
+		9036BB922976B2FC0006C850 /* Listening.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Listening.json; sourceTree = "<group>"; };
+		9036BB942976B34E0006C850 /* ListeningMicrophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningMicrophone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			children = (
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 				9036BB872976AB5D0006C850 /* Megaphone.json */,
+				9036BB922976B2FC0006C850 /* Listening.json */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			children = (
 				9036BB8D2976AEBC0006C850 /* RecordingView.swift */,
 				9036BB902976B26E0006C850 /* SpeakNowText.swift */,
+				9036BB942976B34E0006C850 /* ListeningMicrophone.swift */,
 			);
 			name = Recording;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				3D6F9654296B796300FEFBF8 /* Preview Assets.xcassets in Resources */,
 				3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */,
 				9036BB882976AB5D0006C850 /* Megaphone.json in Resources */,
+				9036BB932976B2FC0006C850 /* Listening.json in Resources */,
 				3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */,
 				3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */,
 			);
@@ -315,6 +322,7 @@
 				3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
+				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
 				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
