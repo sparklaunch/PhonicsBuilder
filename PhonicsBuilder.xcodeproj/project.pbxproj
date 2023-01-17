@@ -34,6 +34,7 @@
 		9036BB882976AB5D0006C850 /* Megaphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB872976AB5D0006C850 /* Megaphone.json */; };
 		9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB892976AB8E0006C850 /* MegaphoneView.swift */; };
 		9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8B2976ADD90006C850 /* GlobalState.swift */; };
+		9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8D2976AEBC0006C850 /* RecordingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		9036BB872976AB5D0006C850 /* Megaphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Megaphone.json; sourceTree = "<group>"; };
 		9036BB892976AB8E0006C850 /* MegaphoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaphoneView.swift; sourceTree = "<group>"; };
 		9036BB8B2976ADD90006C850 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		9036BB8D2976AEBC0006C850 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				3D6F969B29713D6800FEFBF8 /* IconsView */,
 				3D6F968F296FE2FB00FEFBF8 /* Chunks */,
 				3D6F9685296FAD1600FEFBF8 /* Boundary */,
+				9036BB8D2976AEBC0006C850 /* RecordingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,
+				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
 				3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */,

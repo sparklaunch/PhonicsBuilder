@@ -1,10 +1,13 @@
 import SwiftUI
 
 struct MicrophoneView: View {
+    @EnvironmentObject private var globalState: GlobalState
     @State private var microphoneScaleAndOpacity = 0.0
     var body: some View {
         Button {
-            // TODO: MICROPHONE BUTTON.
+            withAnimation {
+                globalState.isRecording = true
+            }
         } label: {
             LottieView(jsonName: "Microphone")
                 .frame(width: 100, height: 100)
