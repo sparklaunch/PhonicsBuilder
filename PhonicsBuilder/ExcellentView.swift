@@ -4,6 +4,7 @@ struct ExcellentView: View {
     var body: some View {
         ZStack {
             Color("ExcellentColor")
+            ExcellentBackground()
             VStack {
                 ExcellentText()
                 ChunksContainerView()

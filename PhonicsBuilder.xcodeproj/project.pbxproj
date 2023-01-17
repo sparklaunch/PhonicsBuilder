@@ -49,6 +49,7 @@
 		9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBAC2976BAEC0006C850 /* ChunksContainerView.swift */; };
 		9036BBAF2976BB390006C850 /* IndividualChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBAE2976BB390006C850 /* IndividualChunkView.swift */; };
 		9036BBB12976D98E0006C850 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB02976D98E0006C850 /* Star.swift */; };
+		9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB32976DBB00006C850 /* ExcellentBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		9036BBAC2976BAEC0006C850 /* ChunksContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunksContainerView.swift; sourceTree = "<group>"; };
 		9036BBAE2976BB390006C850 /* IndividualChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualChunkView.swift; sourceTree = "<group>"; };
 		9036BBB02976D98E0006C850 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		9036BBB32976DBB00006C850 /* ExcellentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 			children = (
 				9036BB9B2976B6AE0006C850 /* ExcellentView.swift */,
 				9036BB9E2976B71D0006C850 /* ExcellentText.swift */,
+				9036BBB32976DBB00006C850 /* ExcellentBackground.swift */,
 			);
 			name = Excellent;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */,
 				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
+				9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
 				9036BBA22976B7BE0006C850 /* GoodView.swift in Sources */,
 				3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */,
