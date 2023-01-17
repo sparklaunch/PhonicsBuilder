@@ -17,6 +17,9 @@ struct OverlayView: View {
             if globalState.finishedRecording {
                 LoadingView()
             }
+            if globalState.showingResultsScreen {
+                ResultsView()
+            }
         }
     }
 }

@@ -39,6 +39,7 @@
 		9036BB932976B2FC0006C850 /* Listening.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB922976B2FC0006C850 /* Listening.json */; };
 		9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB942976B34E0006C850 /* ListeningMicrophone.swift */; };
 		9036BB972976B4A70006C850 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB962976B4A70006C850 /* LoadingView.swift */; };
+		9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB992976B5920006C850 /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		9036BB922976B2FC0006C850 /* Listening.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Listening.json; sourceTree = "<group>"; };
 		9036BB942976B34E0006C850 /* ListeningMicrophone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningMicrophone.swift; sourceTree = "<group>"; };
 		9036BB962976B4A70006C850 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		9036BB992976B5920006C850 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		3D6F965A296B79C800FEFBF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9036BB982976B57E0006C850 /* Results */,
 				9036BB8F2976B2580006C850 /* Recording */,
 				3DD87BE4297143FF00493874 /* Main */,
 				3D6F969B29713D6800FEFBF8 /* IconsView */,
@@ -240,6 +243,14 @@
 			name = Recording;
 			sourceTree = "<group>";
 		};
+		9036BB982976B57E0006C850 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				9036BB992976B5920006C850 /* ResultsView.swift */,
+			);
+			name = Results;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +346,7 @@
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
+				9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */,
 				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
