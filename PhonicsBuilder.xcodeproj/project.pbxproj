@@ -33,6 +33,7 @@
 		3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD87BDF2971431600493874 /* UIImageExtensions.swift */; };
 		9036BB882976AB5D0006C850 /* Megaphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 9036BB872976AB5D0006C850 /* Megaphone.json */; };
 		9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB892976AB8E0006C850 /* MegaphoneView.swift */; };
+		9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BB8B2976ADD90006C850 /* GlobalState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		3DD87BDF2971431600493874 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		9036BB872976AB5D0006C850 /* Megaphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Megaphone.json; sourceTree = "<group>"; };
 		9036BB892976AB8E0006C850 /* MegaphoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaphoneView.swift; sourceTree = "<group>"; };
+		9036BB8B2976ADD90006C850 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				3D6F967A296BD2DB00FEFBF8 /* Camera.swift */,
 				3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */,
 				3D6F96952970E7F600FEFBF8 /* LottieView.swift */,
+				9036BB8B2976ADD90006C850 /* GlobalState.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
+				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
