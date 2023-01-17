@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct ExcellentText: View {
+struct GoodText: View {
     @State private var bouncing = false
     var body: some View {
-        Text("Excellent")
+        Text("Good")
             .font(.custom("Poppins", size: 100))
             .foregroundColor(Color("MainColor"))
             .scaleEffect(bouncing ? 1.0 : 1.5)
