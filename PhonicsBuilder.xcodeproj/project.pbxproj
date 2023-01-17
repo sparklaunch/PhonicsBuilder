@@ -50,6 +50,7 @@
 		9036BBAF2976BB390006C850 /* IndividualChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBAE2976BB390006C850 /* IndividualChunkView.swift */; };
 		9036BBB12976D98E0006C850 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB02976D98E0006C850 /* Star.swift */; };
 		9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB32976DBB00006C850 /* ExcellentBackground.swift */; };
+		9036BBB62976DC550006C850 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB52976DC550006C850 /* Frog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		9036BBAE2976BB390006C850 /* IndividualChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualChunkView.swift; sourceTree = "<group>"; };
 		9036BBB02976D98E0006C850 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		9036BBB32976DBB00006C850 /* ExcellentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentBackground.swift; sourceTree = "<group>"; };
+		9036BBB52976DC550006C850 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 				9036BB9B2976B6AE0006C850 /* ExcellentView.swift */,
 				9036BB9E2976B71D0006C850 /* ExcellentText.swift */,
 				9036BBB32976DBB00006C850 /* ExcellentBackground.swift */,
+				9036BBB52976DC550006C850 /* Frog.swift */,
 			);
 			name = Excellent;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				3DD87BE02971431600493874 /* UIImageExtensions.swift in Sources */,
 				9036BBB12976D98E0006C850 /* Star.swift in Sources */,
 				9036BB9F2976B71D0006C850 /* ExcellentText.swift in Sources */,
+				9036BBB62976DC550006C850 /* Frog.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
