@@ -15,6 +15,7 @@ struct ListeningMicrophone: View {
             .onTapGesture {
                 withAnimation {
                     globalState.finishedRecording = true
+                    RecordingManager.shared.stopRecording()
                 }
             }
     }

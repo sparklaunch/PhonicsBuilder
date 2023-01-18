@@ -8,6 +8,7 @@ struct MicrophoneView: View {
             SoundManager.shared.playSound("click", withExtension: "wav")
             withAnimation {
                 globalState.isRecording = true
+                RecordingManager.shared.startRecording()
             }
         } label: {
             LottieView(jsonName: "Microphone")
