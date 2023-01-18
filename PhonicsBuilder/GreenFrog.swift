@@ -6,9 +6,8 @@ struct GreenFrog: View {
             HStack(spacing: 0) {
                 Spacer()
                 Image("GreenFrog")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .padding()
+                    .scaleEffect(2.0)
+                    .padding(100)
             }
             Spacer()
         }
