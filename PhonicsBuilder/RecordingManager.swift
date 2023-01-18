@@ -68,7 +68,7 @@ class RecordingManager: ObservableObject {
                 let anyJSON = try JSONSerialization.jsonObject(with: data!)
                 let jsonData = try JSONSerialization.data(withJSONObject: anyJSON)
                 let results = try JSONDecoder().decode(PronunciationResult.self, from: jsonData)
-                print("Pronunciation results successfully sent.")
+                print(results)
                 DispatchQueue.main.async {
                     ResultsManager.shared.results = results
                 }
