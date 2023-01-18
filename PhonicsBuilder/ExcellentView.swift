@@ -7,6 +7,8 @@ struct ExcellentView: View {
             ExcellentBackground()
             VStack {
                 ExcellentText()
+                Spacer()
+                    .frame(height: 100)
                 ChunksContainerView()
                 Spacer()
             }
