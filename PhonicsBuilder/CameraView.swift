@@ -1,13 +1,7 @@
-//
-//  CameraView.swift
-//  PhonicsBuilder
-//
-//  Created by 신정훈 on 2023/01/18.
-//
-
 import SwiftUI
 
 struct CameraView: View {
+    @EnvironmentObject private var camera: Camera
     var body: some View {
         VStack {
             LottieView(jsonName: "Camera")
@@ -17,13 +11,10 @@ struct CameraView: View {
                         .foregroundColor(.white.opacity(0.8))
                 )
                 .padding()
+                .onTapGesture {
+                    Camera.capturePhoto()
+                }
             Spacer()
         }
-    }
-}
-
-struct CameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        CameraView()
     }
 }

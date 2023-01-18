@@ -24,9 +24,6 @@ struct RootView: View {
         .onAppear {
             Camera.verifyPermissions()
         }
-        .onTapGesture {
-            Camera.capturePhoto()
-        }
         .onChange(of: camera.results) { _ in
             if !camera.results.isEmpty {
                 camera.iconsShown = true
