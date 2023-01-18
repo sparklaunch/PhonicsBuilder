@@ -83,6 +83,7 @@
 		3D258D942977768D00DF5D68 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D932977768D00DF5D68 /* CameraView.swift */; };
 		3D258D962977789100DF5D68 /* Left.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D952977789100DF5D68 /* Left.json */; };
 		3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D97297778BB00DF5D68 /* LeftArrow.swift */; };
+		3D258D9A29777AD100DF5D68 /* TTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9929777AD100DF5D68 /* TTSManager.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -207,6 +208,7 @@
 		3D258D932977768D00DF5D68 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		3D258D952977789100DF5D68 /* Left.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Left.json; sourceTree = "<group>"; };
 		3D258D97297778BB00DF5D68 /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
+		3D258D9929777AD100DF5D68 /* TTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSManager.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				3D6F96952970E7F600FEFBF8 /* LottieView.swift */,
 				9036BB8B2976ADD90006C850 /* GlobalState.swift */,
 				3D258CFE2977711B00DF5D68 /* SoundManager.swift */,
+				3D258D9929777AD100DF5D68 /* TTSManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 				9036BB912976B26E0006C850 /* SpeakNowText.swift in Sources */,
 				9036BB8E2976AEBC0006C850 /* RecordingView.swift in Sources */,
 				3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */,
+				3D258D9A29777AD100DF5D68 /* TTSManager.swift in Sources */,
 				9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
 				9036BBA22976B7BE0006C850 /* GoodView.swift in Sources */,

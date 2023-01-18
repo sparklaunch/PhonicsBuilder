@@ -27,6 +27,7 @@ struct RootView: View {
         .onChange(of: camera.results) { _ in
             if !camera.results.isEmpty {
                 camera.iconsShown = true
+                TTSManager.shared.requestTTS()
             }
         }
     }
