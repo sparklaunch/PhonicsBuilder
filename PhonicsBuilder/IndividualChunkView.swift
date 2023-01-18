@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct IndividualChunkView: View {
+    @State private var scale = 1.0
     let text: String
     let score: Int
     var borderColor: Color {
@@ -22,6 +23,15 @@ struct IndividualChunkView: View {
                 Text(text)
                     .font(.custom("Poppins", size: 100))
                     .foregroundColor(.black)
+                    .scaleEffect(scale)
+                    .onTapGesture {
+                        withAnimation(.linear(duration: 0.25)) {
+                            scale = 1.5
+                        }
+                        withAnimation(.linear(duration: 0.25).delay(0.25)) {
+                            scale = 1.0
+                        }
+                    }
             }
             .frame(width: 250, height: 250)
             .overlay(
