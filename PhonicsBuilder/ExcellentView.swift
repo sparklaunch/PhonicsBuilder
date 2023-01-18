@@ -10,6 +10,7 @@ struct ExcellentView: View {
                 ChunksContainerView()
                 Spacer()
             }
+            LeftArrow()
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear {

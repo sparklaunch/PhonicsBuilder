@@ -81,6 +81,8 @@
 		3D258D902977725F00DF5D68 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D482977725F00DF5D68 /* click.wav */; };
 		3D258D922977767B00DF5D68 /* Camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D912977767B00DF5D68 /* Camera.json */; };
 		3D258D942977768D00DF5D68 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D932977768D00DF5D68 /* CameraView.swift */; };
+		3D258D962977789100DF5D68 /* Left.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D952977789100DF5D68 /* Left.json */; };
+		3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D97297778BB00DF5D68 /* LeftArrow.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -203,6 +205,8 @@
 		3D258D482977725F00DF5D68 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		3D258D912977767B00DF5D68 /* Camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera.json; sourceTree = "<group>"; };
 		3D258D932977768D00DF5D68 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		3D258D952977789100DF5D68 /* Left.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Left.json; sourceTree = "<group>"; };
+		3D258D97297778BB00DF5D68 /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -468,6 +472,7 @@
 		3DD87BE3297143CF00493874 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				3D258D952977789100DF5D68 /* Left.json */,
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 				9036BB872976AB5D0006C850 /* Megaphone.json */,
 				9036BB922976B2FC0006C850 /* Listening.json */,
@@ -505,6 +510,7 @@
 				9036BBA02976B7B10006C850 /* Good */,
 				9036BB9D2976B7090006C850 /* Excellent */,
 				9036BB992976B5920006C850 /* ResultsView.swift */,
+				3D258D97297778BB00DF5D68 /* LeftArrow.swift */,
 			);
 			name = Results;
 			sourceTree = "<group>";
@@ -661,6 +667,7 @@
 				3D258D8D2977725F00DF5D68 /* oa.mp3 in Resources */,
 				3D258D5C2977725F00DF5D68 /* mp.mp3 in Resources */,
 				3D258D592977725F00DF5D68 /* u.mp3 in Resources */,
+				3D258D962977789100DF5D68 /* Left.json in Resources */,
 				3D258D522977725F00DF5D68 /* tr.mp3 in Resources */,
 				3D258D632977725F00DF5D68 /* er.mp3 in Resources */,
 				3D258D7E2977725F00DF5D68 /* oo_tense_u.mp3 in Resources */,
@@ -712,6 +719,7 @@
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
 				9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */,
 				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,
+				3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */,
 				3D258CFF2977711B00DF5D68 /* SoundManager.swift in Sources */,
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
