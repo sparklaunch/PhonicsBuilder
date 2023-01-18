@@ -69,7 +69,6 @@
 		3D258D832977725F00DF5D68 /* gl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D3B2977725E00DF5D68 /* gl.mp3 */; };
 		3D258D842977725F00DF5D68 /* a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D3C2977725E00DF5D68 /* a.mp3 */; };
 		3D258D852977725F00DF5D68 /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D3D2977725E00DF5D68 /* m.mp3 */; };
-		3D258D862977725F00DF5D68 /* shutter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D3E2977725E00DF5D68 /* shutter.mp3 */; };
 		3D258D872977725F00DF5D68 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D3F2977725E00DF5D68 /* c.mp3 */; };
 		3D258D882977725F00DF5D68 /* f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D402977725E00DF5D68 /* f.mp3 */; };
 		3D258D892977725F00DF5D68 /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D412977725E00DF5D68 /* j.mp3 */; };
@@ -190,7 +189,6 @@
 		3D258D3B2977725E00DF5D68 /* gl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gl.mp3; sourceTree = "<group>"; };
 		3D258D3C2977725E00DF5D68 /* a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a.mp3; sourceTree = "<group>"; };
 		3D258D3D2977725E00DF5D68 /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
-		3D258D3E2977725E00DF5D68 /* shutter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shutter.mp3; sourceTree = "<group>"; };
 		3D258D3F2977725E00DF5D68 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
 		3D258D402977725E00DF5D68 /* f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f.mp3; sourceTree = "<group>"; };
 		3D258D412977725E00DF5D68 /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
@@ -319,7 +317,6 @@
 				3D258D292977725D00DF5D68 /* r.mp3 */,
 				3D258D202977725D00DF5D68 /* s.mp3 */,
 				3D258D432977725E00DF5D68 /* sh.mp3 */,
-				3D258D3E2977725E00DF5D68 /* shutter.mp3 */,
 				3D258D092977725C00DF5D68 /* sl.mp3 */,
 				3D258D462977725E00DF5D68 /* sm.mp3 */,
 				3D258D122977725D00DF5D68 /* sn.mp3 */,
@@ -653,7 +650,6 @@
 				3D258D672977725F00DF5D68 /* bl.mp3 in Resources */,
 				3D258D5F2977725F00DF5D68 /* excellent.mp3 in Resources */,
 				3D258D8B2977725F00DF5D68 /* sh.mp3 in Resources */,
-				3D258D862977725F00DF5D68 /* shutter.mp3 in Resources */,
 				3D258D662977725F00DF5D68 /* cl.mp3 in Resources */,
 				3D258D902977725F00DF5D68 /* click.wav in Resources */,
 				3D258D8D2977725F00DF5D68 /* oa.mp3 in Resources */,

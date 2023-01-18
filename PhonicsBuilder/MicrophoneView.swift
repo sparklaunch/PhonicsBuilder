@@ -5,6 +5,7 @@ struct MicrophoneView: View {
     @State private var microphoneScaleAndOpacity = 0.0
     var body: some View {
         Button {
+            SoundManager.shared.playSound("click", withExtension: "wav")
             withAnimation {
                 globalState.isRecording = true
             }

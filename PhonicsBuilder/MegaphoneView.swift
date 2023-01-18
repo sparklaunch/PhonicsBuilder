@@ -4,7 +4,7 @@ struct MegaphoneView: View {
     @State private var megaphoneScaleAndOpacity = 0.0
     var body: some View {
         Button {
-            // TODO: MEGAPHONE BUTTON.
+            SoundManager.shared.playSound("click", withExtension: "wav")
         } label: {
             ZStack {
                 Circle()
