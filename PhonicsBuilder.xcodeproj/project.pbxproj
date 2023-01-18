@@ -130,6 +130,7 @@
 		9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB32976DBB00006C850 /* ExcellentBackground.swift */; };
 		9036BBB62976DC550006C850 /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB52976DC550006C850 /* Frog.swift */; };
 		9036BBB82976DCF80006C850 /* Elephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB72976DCF80006C850 /* Elephant.swift */; };
+		9036BBBA29785B0D0006C850 /* GreenFrog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9036BBB929785B0D0006C850 /* GreenFrog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +258,7 @@
 		9036BBB32976DBB00006C850 /* ExcellentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcellentBackground.swift; sourceTree = "<group>"; };
 		9036BBB52976DC550006C850 /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
 		9036BBB72976DCF80006C850 /* Elephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elephant.swift; sourceTree = "<group>"; };
+		9036BBB929785B0D0006C850 /* GreenFrog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFrog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +531,7 @@
 				9036BBB32976DBB00006C850 /* ExcellentBackground.swift */,
 				9036BBB52976DC550006C850 /* Frog.swift */,
 				9036BBB72976DCF80006C850 /* Elephant.swift */,
+				9036BBB929785B0D0006C850 /* GreenFrog.swift */,
 			);
 			name = Excellent;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 				3D258D9A29777AD100DF5D68 /* TTSManager.swift in Sources */,
 				9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
+				9036BBBA29785B0D0006C850 /* GreenFrog.swift in Sources */,
 				9036BBA22976B7BE0006C850 /* GoodView.swift in Sources */,
 				3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */,
 			);

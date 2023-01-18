@@ -5,6 +5,7 @@ struct ExcellentBackground: View {
         ZStack {
             Frog()
             Elephant()
+            GreenFrog()
         }
     }
 }
