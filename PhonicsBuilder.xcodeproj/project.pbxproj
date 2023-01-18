@@ -85,6 +85,7 @@
 		3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D97297778BB00DF5D68 /* LeftArrow.swift */; };
 		3D258D9A29777AD100DF5D68 /* TTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9929777AD100DF5D68 /* TTSManager.swift */; };
 		3D258D9C2977ABF300DF5D68 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */; };
+		3D258D9E2978B55300DF5D68 /* ResultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9D2978B55300DF5D68 /* ResultsManager.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -212,6 +213,7 @@
 		3D258D97297778BB00DF5D68 /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		3D258D9929777AD100DF5D68 /* TTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSManager.swift; sourceTree = "<group>"; };
 		3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		3D258D9D2978B55300DF5D68 /* ResultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsManager.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 				3D258CFE2977711B00DF5D68 /* SoundManager.swift */,
 				3D258D9929777AD100DF5D68 /* TTSManager.swift */,
 				3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */,
+				3D258D9D2978B55300DF5D68 /* ResultsManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				9036BBB62976DC550006C850 /* Frog.swift in Sources */,
 				3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */,
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
+				3D258D9E2978B55300DF5D68 /* ResultsManager.swift in Sources */,
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
 				9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */,
 				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,

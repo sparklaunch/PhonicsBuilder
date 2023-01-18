@@ -1,7 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-struct WordResult: Codable {
+struct WordResult: Codable, Equatable {
     let score: Double
     let word: String
     let alphabet: [String]
@@ -12,7 +12,7 @@ struct WordResult: Codable {
     }
 }
 
-struct PronunciationResult: Codable {
+struct PronunciationResult: Codable, Equatable {
     let totalScore: Double
     let words: [WordResult]
     enum CodingKeys: String, CodingKey {
@@ -67,9 +67,11 @@ class RecordingManager: ObservableObject {
             do {
                 let anyJSON = try JSONSerialization.jsonObject(with: data!)
                 let jsonData = try JSONSerialization.data(withJSONObject: anyJSON)
-                let stringData = String(data: jsonData, encoding: .utf8)!
-                let result = try JSONDecoder().decode(PronunciationResult.self, from: jsonData)
-                print(result)
+                let results = try JSONDecoder().decode(PronunciationResult.self, from: jsonData)
+                print("Pronunciation results successfully sent.")
+                DispatchQueue.main.async {
+                    ResultsManager.shared.results = results
+                }
             } catch {
                 print(error.localizedDescription)
             }
