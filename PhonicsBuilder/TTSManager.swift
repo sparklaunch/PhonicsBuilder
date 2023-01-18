@@ -34,6 +34,9 @@ class TTSManager: ObservableObject {
             }
             do {
                 let decodedData = Data(base64Encoded: data!)!
+                let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+                let targetURL = cachesDirectory.appendingPathComponent("tts.wav")
+                try decodedData.write(to: targetURL)
                 player = try AVAudioPlayer(data: decodedData)
                 player?.play()
             } catch {

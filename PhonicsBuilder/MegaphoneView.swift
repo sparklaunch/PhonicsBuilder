@@ -1,10 +1,13 @@
 import SwiftUI
+import AVFoundation
 
 struct MegaphoneView: View {
     @State private var megaphoneScaleAndOpacity = 0.0
     var body: some View {
         Button {
-            SoundManager.shared.playSound("click", withExtension: "wav")
+            let targetURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("tts.wav")
+            player = try? AVAudioPlayer(contentsOf: targetURL)
+            player?.play()
         } label: {
             ZStack {
                 Circle()
