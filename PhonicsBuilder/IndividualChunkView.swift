@@ -25,10 +25,10 @@ struct IndividualChunkView: View {
                     .foregroundColor(.black)
                     .scaleEffect(scale)
                     .onTapGesture {
-                        withAnimation(.linear(duration: 0.25)) {
+                        withAnimation(.interpolatingSpring(stiffness: 100, damping: 10)) {
                             scale = 1.5
                         }
-                        withAnimation(.linear(duration: 0.25).delay(0.25)) {
+                        withAnimation(.interpolatingSpring(stiffness: 100, damping: 10).delay(0.25)) {
                             scale = 1.0
                         }
                     }
