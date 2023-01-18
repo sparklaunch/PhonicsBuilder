@@ -12,6 +12,9 @@ struct ExcellentView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
+        .onAppear {
+            SoundManager.shared.playSound("excellent", withExtension: "mp3")
+        }
     }
 }
 
