@@ -1,6 +1,26 @@
 import SwiftUI
 import AVFoundation
 
+struct WordResult: Codable {
+    let score: Double
+    let word: String
+    let alphabet: [String]
+    enum CodingKeys: String, CodingKey {
+        case score
+        case word
+        case alphabet = "arpabet"
+    }
+}
+
+struct PronunciationResult: Codable {
+    let totalScore: Double
+    let words: [WordResult]
+    enum CodingKeys: String, CodingKey {
+        case totalScore = "total_score"
+        case words
+    }
+}
+
 class RecordingManager: ObservableObject {
     static let shared = RecordingManager()
     private init() {}
@@ -45,7 +65,11 @@ class RecordingManager: ObservableObject {
                 return
             }
             do {
-                let jsonData = try JSONSerialization.jsonObject(with: data!)
+                let anyJSON = try JSONSerialization.jsonObject(with: data!)
+                let jsonData = try JSONSerialization.data(withJSONObject: anyJSON)
+                let stringData = String(data: jsonData, encoding: .utf8)!
+                let result = try JSONDecoder().decode(PronunciationResult.self, from: jsonData)
+                print(result)
             } catch {
                 print(error.localizedDescription)
             }
