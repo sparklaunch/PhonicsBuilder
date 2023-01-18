@@ -79,6 +79,8 @@
 		3D258D8E2977725F00DF5D68 /* sm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D462977725E00DF5D68 /* sm.mp3 */; };
 		3D258D8F2977725F00DF5D68 /* n.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D472977725F00DF5D68 /* n.mp3 */; };
 		3D258D902977725F00DF5D68 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D482977725F00DF5D68 /* click.wav */; };
+		3D258D922977767B00DF5D68 /* Camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D912977767B00DF5D68 /* Camera.json */; };
+		3D258D942977768D00DF5D68 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D932977768D00DF5D68 /* CameraView.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -199,6 +201,8 @@
 		3D258D462977725E00DF5D68 /* sm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sm.mp3; sourceTree = "<group>"; };
 		3D258D472977725F00DF5D68 /* n.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n.mp3; sourceTree = "<group>"; };
 		3D258D482977725F00DF5D68 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		3D258D912977767B00DF5D68 /* Camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera.json; sourceTree = "<group>"; };
+		3D258D932977768D00DF5D68 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -428,6 +432,7 @@
 				3D6F96992970EA9900FEFBF8 /* IconsView.swift */,
 				3D6F969C29713D7F00FEFBF8 /* MicrophoneView.swift */,
 				9036BB892976AB8E0006C850 /* MegaphoneView.swift */,
+				3D258D932977768D00DF5D68 /* CameraView.swift */,
 			);
 			name = IconsView;
 			sourceTree = "<group>";
@@ -466,6 +471,7 @@
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 				9036BB872976AB5D0006C850 /* Megaphone.json */,
 				9036BB922976B2FC0006C850 /* Listening.json */,
+				3D258D912977767B00DF5D68 /* Camera.json */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -677,6 +683,7 @@
 				3D258D6C2977725F00DF5D68 /* l.mp3 in Resources */,
 				3D258D8A2977725F00DF5D68 /* th.mp3 in Resources */,
 				3D258D8E2977725F00DF5D68 /* sm.mp3 in Resources */,
+				3D258D922977767B00DF5D68 /* Camera.json in Resources */,
 				3D258D882977725F00DF5D68 /* f.mp3 in Resources */,
 				3D6F96982970E87800FEFBF8 /* Microphone.json in Resources */,
 				3D258D812977725F00DF5D68 /* cr.mp3 in Resources */,
@@ -717,6 +724,7 @@
 				9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
 				9036BB9C2976B6AE0006C850 /* ExcellentView.swift in Sources */,
+				3D258D942977768D00DF5D68 /* CameraView.swift in Sources */,
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
 				9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */,
 				9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */,

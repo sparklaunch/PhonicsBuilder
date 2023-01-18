@@ -8,6 +8,9 @@ struct OverlayView: View {
         ZStack {
             BackdropView(height: height)
             ChunksView()
+            if globalState.cameraAvailable {
+                CameraView()
+            }
             if iconsShown {
                 IconsView()
             }
