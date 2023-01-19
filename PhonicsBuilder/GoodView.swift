@@ -22,7 +22,7 @@ struct GoodView: View {
     var body: some View {
         ZStack {
             Color("GoodColor")
-            ExcellentBackground()
+            GoodBackground()
             VStack {
                 ExcellentText()
                 Spacer()

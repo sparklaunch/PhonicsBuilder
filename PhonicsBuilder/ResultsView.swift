@@ -13,6 +13,6 @@ struct ResultsView: View {
         }
     }
     var body: some View {
-        grade
+        GoodView()
     }
 }

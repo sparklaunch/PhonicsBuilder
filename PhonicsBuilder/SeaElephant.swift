@@ -7,6 +7,7 @@ struct SeaElephant: View {
             HStack(spacing: 0) {
                 Image("SeaElephant")
                     .scaleEffect(2.0)
+                    .padding(100)
                 Spacer()
             }
         }
