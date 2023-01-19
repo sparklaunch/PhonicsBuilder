@@ -10,10 +10,12 @@ struct IndividualChunkView: View {
                 return Color("ExcellentColor")
             case 2:
                 return Color("GoodColor")
-            case 0, 1:
+            case 1:
                 return Color("NiceTryColor")
+            case 0:
+                return Color("PoorColor")
             default:
-                return Color("ExcellentColor")
+                return Color("PoorColor")
         }
     }
     var body: some View {
