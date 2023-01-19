@@ -22,10 +22,17 @@ struct NiceTryView: View {
     var body: some View {
         ZStack {
             Color("NiceTryColor")
+            NiceTryBackground()
             VStack {
-                NiceTryText()
+                GoodText()
+                Spacer()
+                    .frame(height: 100)
+                ChunksContainerView()
+                Spacer()
             }
+            LeftArrow()
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear {
             playNiceTrySound()
         }

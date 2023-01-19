@@ -89,6 +89,9 @@
 		3D258DA02978C84B00DF5D68 /* GoodBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9F2978C84B00DF5D68 /* GoodBackground.swift */; };
 		3D258DA22978C8CD00DF5D68 /* SeaElephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA12978C8CD00DF5D68 /* SeaElephant.swift */; };
 		3D258DA42978C94E00DF5D68 /* FoxTrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA32978C94E00DF5D68 /* FoxTrot.swift */; };
+		3D258DA62978CBBC00DF5D68 /* NiceTryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA52978CBBC00DF5D68 /* NiceTryBackground.swift */; };
+		3D258DA82978CC0F00DF5D68 /* Crocodile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA72978CC0F00DF5D68 /* Crocodile.swift */; };
+		3D258DAA2978CC9B00DF5D68 /* BoxElephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -220,6 +223,9 @@
 		3D258D9F2978C84B00DF5D68 /* GoodBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodBackground.swift; sourceTree = "<group>"; };
 		3D258DA12978C8CD00DF5D68 /* SeaElephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaElephant.swift; sourceTree = "<group>"; };
 		3D258DA32978C94E00DF5D68 /* FoxTrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxTrot.swift; sourceTree = "<group>"; };
+		3D258DA52978CBBC00DF5D68 /* NiceTryBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryBackground.swift; sourceTree = "<group>"; };
+		3D258DA72978CC0F00DF5D68 /* Crocodile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crocodile.swift; sourceTree = "<group>"; };
+		3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxElephant.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -562,6 +568,9 @@
 			children = (
 				9036BBA62976B8320006C850 /* NiceTryView.swift */,
 				9036BBA82976B8510006C850 /* NiceTryText.swift */,
+				3D258DA52978CBBC00DF5D68 /* NiceTryBackground.swift */,
+				3D258DA72978CC0F00DF5D68 /* Crocodile.swift */,
+				3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */,
 			);
 			name = NiceTry;
 			sourceTree = "<group>";
@@ -741,6 +750,7 @@
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
 				3D258DA02978C84B00DF5D68 /* GoodBackground.swift in Sources */,
 				9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */,
+				3D258DA82978CC0F00DF5D68 /* Crocodile.swift in Sources */,
 				9036BB8C2976ADD90006C850 /* GlobalState.swift in Sources */,
 				3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */,
 				3D258CFF2977711B00DF5D68 /* SoundManager.swift in Sources */,
@@ -761,6 +771,7 @@
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
 				9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */,
 				9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */,
+				3D258DAA2978CC9B00DF5D68 /* BoxElephant.swift in Sources */,
 				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
@@ -774,6 +785,7 @@
 				9036BBB42976DBB00006C850 /* ExcellentBackground.swift in Sources */,
 				3D6F9672296B9EEA00FEFBF8 /* RootView.swift in Sources */,
 				9036BBBA29785B0D0006C850 /* GreenFrog.swift in Sources */,
+				3D258DA62978CBBC00DF5D68 /* NiceTryBackground.swift in Sources */,
 				9036BBA22976B7BE0006C850 /* GoodView.swift in Sources */,
 				3D258DA42978C94E00DF5D68 /* FoxTrot.swift in Sources */,
 				3D6F96962970E7F600FEFBF8 /* LottieView.swift in Sources */,
