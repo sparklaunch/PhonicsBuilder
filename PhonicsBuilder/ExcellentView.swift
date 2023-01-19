@@ -29,6 +29,7 @@ struct ExcellentView: View {
                     .frame(height: 100)
                 ChunksContainerView()
                 Spacer()
+                RetryButton()
             }
             LeftArrow()
         }
