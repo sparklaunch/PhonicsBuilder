@@ -1,6 +1,8 @@
 import SwiftUI
+import AVFoundation
 
 struct IndividualChunkView: View {
+    @State private var audioPlayer: AVAudioPlayer!
     @State private var scale = 1.0
     let text: String
     let score: Int
@@ -32,6 +34,16 @@ struct IndividualChunkView: View {
                         }
                         withAnimation(.interpolatingSpring(stiffness: 100, damping: 10).delay(0.25)) {
                             scale = 1.0
+                        }
+                        guard let soundURL = Bundle.main.url(forResource: text, withExtension: "mp3") else {
+                            print("Failed to load chunk sound.")
+                            return
+                        }
+                        do {
+                            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                            audioPlayer.play()
+                        } catch {
+                            print(error.localizedDescription)
                         }
                     }
             }
