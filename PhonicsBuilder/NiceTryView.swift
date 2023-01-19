@@ -29,6 +29,7 @@ struct NiceTryView: View {
                     .frame(height: 100)
                 ChunksContainerView()
                 Spacer()
+                RetryButton()
             }
             LeftArrow()
         }

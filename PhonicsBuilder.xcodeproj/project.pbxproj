@@ -93,6 +93,7 @@
 		3D258DA82978CC0F00DF5D68 /* Crocodile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA72978CC0F00DF5D68 /* Crocodile.swift */; };
 		3D258DAA2978CC9B00DF5D68 /* BoxElephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */; };
 		3D258DAC29790DEE00DF5D68 /* EFuture.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D258DAB29790DEE00DF5D68 /* EFuture.otf */; };
+		3D258DAE2979128000DF5D68 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DAD2979128000DF5D68 /* RetryButton.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -227,6 +228,7 @@
 		3D258DA72978CC0F00DF5D68 /* Crocodile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crocodile.swift; sourceTree = "<group>"; };
 		3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxElephant.swift; sourceTree = "<group>"; };
 		3D258DAB29790DEE00DF5D68 /* EFuture.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EFuture.otf; sourceTree = "<group>"; };
+		3D258DAD2979128000DF5D68 /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -534,6 +536,7 @@
 				9036BB9D2976B7090006C850 /* Excellent */,
 				9036BB992976B5920006C850 /* ResultsView.swift */,
 				3D258D97297778BB00DF5D68 /* LeftArrow.swift */,
+				3D258DAD2979128000DF5D68 /* RetryButton.swift */,
 			);
 			name = Results;
 			sourceTree = "<group>";
@@ -748,6 +751,7 @@
 				3D6F967B296BD2DB00FEFBF8 /* Camera.swift in Sources */,
 				3D258D9E2978B55300DF5D68 /* ResultsManager.swift in Sources */,
 				9036BB952976B34E0006C850 /* ListeningMicrophone.swift in Sources */,
+				3D258DAE2979128000DF5D68 /* RetryButton.swift in Sources */,
 				3D258DA02978C84B00DF5D68 /* GoodBackground.swift in Sources */,
 				9036BBAD2976BAEC0006C850 /* ChunksContainerView.swift in Sources */,
 				3D258DA82978CC0F00DF5D68 /* Crocodile.swift in Sources */,

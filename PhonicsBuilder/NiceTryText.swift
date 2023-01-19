@@ -6,7 +6,7 @@ struct NiceTryText: View {
         Text("Nice Try")
             .font(.custom("EFUTURE4_EB", size: 100))
             .foregroundColor(Color("MainColor"))
-            .padding()
+            .padding(.top, 50)
             .scaleEffect(bouncing ? 1.0 : 1.2)
             .animation(.interactiveSpring(response: 0.5, dampingFraction: 1, blendDuration: 0.25).repeatForever(autoreverses: true), value: bouncing)
             .onAppear {
