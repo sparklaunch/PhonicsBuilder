@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ResultsView: View {
     @EnvironmentObject private var resultsManager: ResultsManager
-    @ViewBuilder var grade: some View {
+    @ViewBuilder var gradeView: some View {
         switch resultsManager.results.totalScore {
             case 70...:
                 ExcellentView()
@@ -13,6 +13,6 @@ struct ResultsView: View {
         }
     }
     var body: some View {
-        NiceTryView()
+        gradeView
     }
 }
