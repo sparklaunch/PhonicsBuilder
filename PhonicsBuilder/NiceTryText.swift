@@ -4,7 +4,7 @@ struct NiceTryText: View {
     @State private var bouncing = false
     var body: some View {
         Text("Nice Try")
-            .font(.custom("Poppins", size: 100))
+            .font(.custom("EFUTURE4_EB", size: 100))
             .foregroundColor(Color("MainColor"))
             .padding()
             .scaleEffect(bouncing ? 1.0 : 1.2)

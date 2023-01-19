@@ -8,7 +8,7 @@ struct ChunkView: View {
     var body: some View {
         ZStack {
             Text(text)
-                .font(.custom("Poppins", size: 150, relativeTo: .largeTitle))
+                .font(.custom("EFUTURE4_EB", size: 150, relativeTo: .largeTitle))
                 .scaleEffect(chunkScale)
         }
         .frame(maxWidth: .infinity, alignment: .center)

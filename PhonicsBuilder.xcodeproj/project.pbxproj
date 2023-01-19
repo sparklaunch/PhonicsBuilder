@@ -92,6 +92,7 @@
 		3D258DA62978CBBC00DF5D68 /* NiceTryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA52978CBBC00DF5D68 /* NiceTryBackground.swift */; };
 		3D258DA82978CC0F00DF5D68 /* Crocodile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA72978CC0F00DF5D68 /* Crocodile.swift */; };
 		3D258DAA2978CC9B00DF5D68 /* BoxElephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */; };
+		3D258DAC29790DEE00DF5D68 /* EFuture.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D258DAB29790DEE00DF5D68 /* EFuture.otf */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -103,7 +104,6 @@
 		3D6F9682296FAB1100FEFBF8 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */; };
 		3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */; };
 		3D6F9687296FAD6F00FEFBF8 /* BackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */; };
-		3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9688296FD8FE00FEFBF8 /* Poppins.ttf */; };
 		3D6F968C296FDA4F00FEFBF8 /* ChunksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968B296FDA4F00FEFBF8 /* ChunksView.swift */; };
 		3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F968D296FE2A500FEFBF8 /* ChunkView.swift */; };
 		3D6F96942970E6E200FEFBF8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3D6F96932970E6E200FEFBF8 /* Lottie */; };
@@ -226,6 +226,7 @@
 		3D258DA52978CBBC00DF5D68 /* NiceTryBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceTryBackground.swift; sourceTree = "<group>"; };
 		3D258DA72978CC0F00DF5D68 /* Crocodile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crocodile.swift; sourceTree = "<group>"; };
 		3D258DA92978CC9B00DF5D68 /* BoxElephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxElephant.swift; sourceTree = "<group>"; };
+		3D258DAB29790DEE00DF5D68 /* EFuture.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EFuture.otf; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,7 +239,6 @@
 		3D6F9681296FAB1100FEFBF8 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
 		3D6F9683296FAC2A00FEFBF8 /* BoundaryCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryCornerView.swift; sourceTree = "<group>"; };
 		3D6F9686296FAD6F00FEFBF8 /* BackdropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropView.swift; sourceTree = "<group>"; };
-		3D6F9688296FD8FE00FEFBF8 /* Poppins.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Poppins.ttf; sourceTree = "<group>"; };
 		3D6F968A296FD92000FEFBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D6F968B296FDA4F00FEFBF8 /* ChunksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunksView.swift; sourceTree = "<group>"; };
 		3D6F968D296FE2A500FEFBF8 /* ChunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkView.swift; sourceTree = "<group>"; };
@@ -477,7 +477,7 @@
 		3DD87BE12971437C00493874 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3D6F9688296FD8FE00FEFBF8 /* Poppins.ttf */,
+				3D258DAB29790DEE00DF5D68 /* EFuture.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -665,7 +665,6 @@
 				3D258D4A2977725F00DF5D68 /* ng.mp3 in Resources */,
 				3D258D6D2977725F00DF5D68 /* fr.mp3 in Resources */,
 				3D258D542977725F00DF5D68 /* x.mp3 in Resources */,
-				3D6F9689296FD8FE00FEFBF8 /* Poppins.ttf in Resources */,
 				3D258D4B2977725F00DF5D68 /* st.mp3 in Resources */,
 				3D258D582977725F00DF5D68 /* nt.mp3 in Resources */,
 				3D258D5D2977725F00DF5D68 /* ow_au.mp3 in Resources */,
@@ -674,6 +673,7 @@
 				3D258D732977725F00DF5D68 /* ow_ou.mp3 in Resources */,
 				3D258D4D2977725F00DF5D68 /* ay.mp3 in Resources */,
 				3D258D602977725F00DF5D68 /* good.mp3 in Resources */,
+				3D258DAC29790DEE00DF5D68 /* EFuture.otf in Resources */,
 				3D258D642977725F00DF5D68 /* pr.mp3 in Resources */,
 				3D258D6E2977725F00DF5D68 /* oi.mp3 in Resources */,
 				3D258D612977725F00DF5D68 /* br.mp3 in Resources */,

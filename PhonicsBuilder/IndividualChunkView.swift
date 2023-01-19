@@ -25,7 +25,7 @@ struct IndividualChunkView: View {
             ZStack {
                 Color.white
                 Text(text)
-                    .font(.custom("Poppins", size: 100))
+                    .font(.custom("EFUTURE4_EB", size: 100))
                     .foregroundColor(.black)
                     .scaleEffect(scale)
                     .onTapGesture {
