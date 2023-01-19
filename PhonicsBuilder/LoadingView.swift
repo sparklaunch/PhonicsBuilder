@@ -9,7 +9,7 @@ struct LoadingView: View {
             ProgressView()
                 .scaleEffect(3)
         }
-        .onChange(of: resultsManager.results) { _ in
+        .onChange(of: resultsManager.id) { _ in
             withAnimation {
                 globalState.finishedRecording = false
                 globalState.showingResultsScreen = true

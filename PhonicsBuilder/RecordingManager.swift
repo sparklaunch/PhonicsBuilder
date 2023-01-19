@@ -78,6 +78,7 @@ class RecordingManager: ObservableObject {
                 print(results)
                 DispatchQueue.main.async {
                     ResultsManager.shared.results = results
+                    ResultsManager.shared.id = UUID()
                 }
             } catch {
                 print(error.localizedDescription)
