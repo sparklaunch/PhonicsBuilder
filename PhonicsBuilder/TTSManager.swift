@@ -1,9 +1,8 @@
 import SwiftUI
 import AVFoundation
 
-var player: AVAudioPlayer?
-
 class TTSManager: ObservableObject {
+    var audioPlayer: AVAudioPlayer!
     static let shared = TTSManager()
     private init() {}
     func requestTTS() {
@@ -37,8 +36,12 @@ class TTSManager: ObservableObject {
                 let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
                 let targetURL = cachesDirectory.appendingPathComponent("tts.wav")
                 try decodedData.write(to: targetURL)
-                player = try AVAudioPlayer(data: decodedData)
-                player?.play()
+                self.audioPlayer = try AVAudioPlayer(contentsOf: targetURL)
+                if self.audioPlayer.prepareToPlay() {
+                    self.audioPlayer.play()
+                } else {
+                    print("Failed to prepare to play.")
+                }
             } catch {
                 print(error.localizedDescription)
             }

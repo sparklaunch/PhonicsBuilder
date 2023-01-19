@@ -1,11 +1,26 @@
 import SwiftUI
+import AVFoundation
 
 struct MicrophoneView: View {
     @EnvironmentObject private var globalState: GlobalState
+    @State private var audioPlayer: AVAudioPlayer!
     @State private var microphoneScaleAndOpacity = 0.0
     var body: some View {
         Button {
-            SoundManager.shared.playSound("click", withExtension: "wav")
+            guard let clickURL = Bundle.main.url(forResource: "click", withExtension: "wav") else {
+                print("Failed to find click sound")
+                return
+            }
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: clickURL)
+            } catch {
+                print(error.localizedDescription)
+            }
+            if audioPlayer.prepareToPlay() {
+                audioPlayer.play()
+            } else {
+                print("Failed to prepare to play.")
+            }
             withAnimation {
                 globalState.isRecording = true
                 RecordingManager.shared.startRecording()

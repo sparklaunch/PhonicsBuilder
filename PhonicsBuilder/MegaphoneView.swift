@@ -3,11 +3,16 @@ import AVFoundation
 
 struct MegaphoneView: View {
     @State private var megaphoneScaleAndOpacity = 0.0
+    @State private var audioPlayer: AVAudioPlayer!
     var body: some View {
         Button {
             let targetURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("tts.wav")
-            player = try? AVAudioPlayer(contentsOf: targetURL)
-            player?.play()
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: targetURL)
+            } catch {
+                print(error.localizedDescription)
+            }
+            audioPlayer.play()
         } label: {
             ZStack {
                 Circle()
