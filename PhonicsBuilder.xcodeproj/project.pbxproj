@@ -81,7 +81,6 @@
 		3D258D902977725F00DF5D68 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D482977725F00DF5D68 /* click.wav */; };
 		3D258D922977767B00DF5D68 /* Camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D912977767B00DF5D68 /* Camera.json */; };
 		3D258D942977768D00DF5D68 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D932977768D00DF5D68 /* CameraView.swift */; };
-		3D258D962977789100DF5D68 /* Left.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D258D952977789100DF5D68 /* Left.json */; };
 		3D258D98297778BB00DF5D68 /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D97297778BB00DF5D68 /* LeftArrow.swift */; };
 		3D258D9A29777AD100DF5D68 /* TTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9929777AD100DF5D68 /* TTSManager.swift */; };
 		3D258D9C2977ABF300DF5D68 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */; };
@@ -216,7 +215,6 @@
 		3D258D482977725F00DF5D68 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		3D258D912977767B00DF5D68 /* Camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera.json; sourceTree = "<group>"; };
 		3D258D932977768D00DF5D68 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		3D258D952977789100DF5D68 /* Left.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Left.json; sourceTree = "<group>"; };
 		3D258D97297778BB00DF5D68 /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		3D258D9929777AD100DF5D68 /* TTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSManager.swift; sourceTree = "<group>"; };
 		3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
@@ -497,7 +495,6 @@
 		3DD87BE3297143CF00493874 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				3D258D952977789100DF5D68 /* Left.json */,
 				3D6F96972970E87800FEFBF8 /* Microphone.json */,
 				9036BB872976AB5D0006C850 /* Megaphone.json */,
 				9036BB922976B2FC0006C850 /* Listening.json */,
@@ -700,7 +697,6 @@
 				3D258D8D2977725F00DF5D68 /* oa.mp3 in Resources */,
 				3D258D5C2977725F00DF5D68 /* mp.mp3 in Resources */,
 				3D258D592977725F00DF5D68 /* u.mp3 in Resources */,
-				3D258D962977789100DF5D68 /* Left.json in Resources */,
 				3D258D522977725F00DF5D68 /* tr.mp3 in Resources */,
 				3D258D632977725F00DF5D68 /* er.mp3 in Resources */,
 				3D258D7E2977725F00DF5D68 /* oo_tense_u.mp3 in Resources */,

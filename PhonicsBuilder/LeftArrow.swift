@@ -7,8 +7,8 @@ struct LeftArrow: View {
             Spacer()
             HStack {
                 Spacer()
-                LottieView(jsonName: "Left")
-                    .frame(width: 100, height: 100)
+                Image("Back")
+                    .scaleEffect(2)
                     .padding(50)
                     .onTapGesture {
                         withAnimation {
