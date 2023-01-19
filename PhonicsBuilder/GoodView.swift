@@ -22,10 +22,17 @@ struct GoodView: View {
     var body: some View {
         ZStack {
             Color("GoodColor")
+            ExcellentBackground()
             VStack {
-                GoodText()
+                ExcellentText()
+                Spacer()
+                    .frame(height: 100)
+                ChunksContainerView()
+                Spacer()
             }
+            LeftArrow()
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear {
             playGoodSound()
         }

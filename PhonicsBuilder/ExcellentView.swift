@@ -38,9 +38,3 @@ struct ExcellentView: View {
         }
     }
 }
-
-struct ExcellentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExcellentView()
-    }
-}
