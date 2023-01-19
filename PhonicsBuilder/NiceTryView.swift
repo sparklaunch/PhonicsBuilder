@@ -24,7 +24,7 @@ struct NiceTryView: View {
             Color("NiceTryColor")
             NiceTryBackground()
             VStack {
-                GoodText()
+                NiceTryText()
                 Spacer()
                     .frame(height: 100)
                 ChunksContainerView()
