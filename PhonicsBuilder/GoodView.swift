@@ -24,7 +24,7 @@ struct GoodView: View {
             Color("GoodColor")
             GoodBackground()
             VStack {
-                ExcellentText()
+                GoodText()
                 Spacer()
                     .frame(height: 100)
                 ChunksContainerView()

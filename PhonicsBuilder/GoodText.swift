@@ -6,8 +6,9 @@ struct GoodText: View {
         Text("Good")
             .font(.custom("Poppins", size: 100))
             .foregroundColor(Color("MainColor"))
-            .scaleEffect(bouncing ? 1.0 : 1.5)
-            .animation(.linear(duration: 0.5).repeatForever(autoreverses: true), value: bouncing)
+            .padding()
+            .scaleEffect(bouncing ? 1.0 : 1.2)
+            .animation(.interactiveSpring(response: 0.5, dampingFraction: 1, blendDuration: 0.25).repeatForever(autoreverses: true), value: bouncing)
             .onAppear {
                 bouncing = true
             }
