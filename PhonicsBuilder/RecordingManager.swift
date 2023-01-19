@@ -50,6 +50,13 @@ class RecordingManager: ObservableObject {
     }
     func stopRecording() {
         audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback, mode: .default)
+            try audioSession.setActive(true)
+        } catch {
+            print(error.localizedDescription)
+        }
         sendRecordedAudio()
     }
     func sendRecordedAudio() {
