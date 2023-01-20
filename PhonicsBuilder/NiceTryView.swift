@@ -3,6 +3,7 @@ import AVFoundation
 
 struct NiceTryView: View {
     @State private var audioPlayer: AVAudioPlayer!
+    let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     func playNiceTrySound() {
         guard let soundURL = Bundle.main.url(forResource: "good", withExtension: "mp3") else {
             print("Unable to find good.mp3")
@@ -26,9 +27,11 @@ struct NiceTryView: View {
             VStack {
                 NiceTryText()
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: isPhone ? 10 : 100)
                 ChunksContainerView()
-                Spacer()
+                if !isPhone {
+                    Spacer()                    
+                }
                 RetryButton()
             }
             LeftArrow()

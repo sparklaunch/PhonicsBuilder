@@ -2,6 +2,7 @@ import SwiftUI
 import AVFoundation
 
 struct IndividualChunkView: View {
+    let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     @State private var audioPlayer: AVAudioPlayer!
     @State private var scale = 1.0
     let text: String
@@ -55,7 +56,7 @@ struct IndividualChunkView: View {
                         }
                     }
             }
-            .frame(width: 250, height: 250)
+            .frame(width: isPhone ? 180 : 250, height: isPhone ? 180 : 250)
             .overlay(
                 RoundedRectangle(cornerRadius: 30, style: .continuous)
                     .stroke(borderColor, lineWidth: 20)
@@ -64,7 +65,7 @@ struct IndividualChunkView: View {
             .shadow(radius: 10)
             .overlay(
                 face
-                    .scaleEffect(2.0)
+                    .scaleEffect(isPhone ? 1.5 : 2.0)
                     .offset(y: -30)
                 , alignment: .top
             )

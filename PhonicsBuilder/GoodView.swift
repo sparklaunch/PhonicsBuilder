@@ -2,6 +2,7 @@ import SwiftUI
 import AVFoundation
 
 struct GoodView: View {
+    let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     @State private var audioPlayer: AVAudioPlayer!
     func playGoodSound() {
         guard let soundURL = Bundle.main.url(forResource: "good", withExtension: "mp3") else {
@@ -26,7 +27,7 @@ struct GoodView: View {
             VStack {
                 GoodText()
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: isPhone ? 10 : 100)
                 ChunksContainerView()
                 Spacer()
                 RetryButton()

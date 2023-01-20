@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct SpeakNowText: View {
+    let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     @State private var bouncing = false
     var body: some View {
         Text("Speak Now")
-            .font(.custom(Constants.eFutureFont, size: 64))
+            .font(.custom(Constants.eFutureFont, size: isPhone ? 48 : 64))
             .foregroundColor(Color("MainColor"))
             .padding()
             .scaleEffect(bouncing ? 1.0 : 1.2)
