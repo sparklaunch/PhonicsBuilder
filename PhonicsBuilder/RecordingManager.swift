@@ -1,27 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-struct WordResult: Codable, Equatable {
-    let score: Double
-    let word: String
-    let alphabet: [String]
-    enum CodingKeys: String, CodingKey {
-        case score
-        case word
-        case alphabet = "arpabet"
-    }
-}
-
-struct PronunciationResult: Codable, Equatable {
-    let totalScore: Double
-    let words: [WordResult]
-    enum CodingKeys: String, CodingKey {
-        case totalScore = "total_score"
-        case words
-    }
-}
-
-class RecordingManager: ObservableObject {
+class RecordingManager {
     static let shared = RecordingManager()
     private init() {}
     var audioRecorder: AVAudioRecorder!

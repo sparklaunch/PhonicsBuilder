@@ -95,6 +95,8 @@
 		3D258DAE2979128000DF5D68 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DAD2979128000DF5D68 /* RetryButton.swift */; };
 		3D258DB3297A301300DF5D68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB2297A301300DF5D68 /* Constants.swift */; };
 		3D258DB5297A337400DF5D68 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB4297A337400DF5D68 /* Grade.swift */; };
+		3D258DB8297A3B1800DF5D68 /* PronunciationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB7297A3B1800DF5D68 /* PronunciationResult.swift */; };
+		3D258DBA297A3B3700DF5D68 /* WordResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB9297A3B3700DF5D68 /* WordResult.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -230,6 +232,8 @@
 		3D258DAD2979128000DF5D68 /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
 		3D258DB2297A301300DF5D68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D258DB4297A337400DF5D68 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		3D258DB7297A3B1800DF5D68 /* PronunciationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationResult.swift; sourceTree = "<group>"; };
+		3D258DB9297A3B3700DF5D68 /* WordResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResult.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -392,6 +396,15 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
+		3D258DB6297A3B0C00DF5D68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D258DB7297A3B1800DF5D68 /* PronunciationResult.swift */,
+				3D258DB9297A3B3700DF5D68 /* WordResult.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3D6F9640296B796100FEFBF8 = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +424,7 @@
 		3D6F964B296B796200FEFBF8 /* PhonicsBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				3D258DB6297A3B0C00DF5D68 /* Models */,
 				3D258DB1297A300800DF5D68 /* Shared */,
 				3D258D002977725000DF5D68 /* Sounds */,
 				3DD87BE3297143CF00493874 /* Animations */,
@@ -789,6 +803,7 @@
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,
 				9036BBA42976B7DF0006C850 /* GoodText.swift in Sources */,
 				3D6F969A2970EA9900FEFBF8 /* IconsView.swift in Sources */,
+				3D258DBA297A3B3700DF5D68 /* WordResult.swift in Sources */,
 				9036BBB82976DCF80006C850 /* Elephant.swift in Sources */,
 				9036BBA92976B8510006C850 /* NiceTryText.swift in Sources */,
 				3D6F969F29713E5A00FEFBF8 /* OverlayView.swift in Sources */,
@@ -802,6 +817,7 @@
 				3D258DAA2978CC9B00DF5D68 /* BoxElephant.swift in Sources */,
 				9036BB8A2976AB8E0006C850 /* MegaphoneView.swift in Sources */,
 				3D6F968E296FE2A500FEFBF8 /* ChunkView.swift in Sources */,
+				3D258DB8297A3B1800DF5D68 /* PronunciationResult.swift in Sources */,
 				3DD87BDB2971416400493874 /* ViewExtensions.swift in Sources */,
 				9036BB972976B4A70006C850 /* LoadingView.swift in Sources */,
 				3D6F969D29713D7F00FEFBF8 /* MicrophoneView.swift in Sources */,

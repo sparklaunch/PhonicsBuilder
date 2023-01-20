@@ -18,8 +18,8 @@ class Camera: ObservableObject {
     class PhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
         func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
             print("didFinishProcessingPhoto started.")
-            guard error == nil else {
-                print("Error capturing photo: \(error!.localizedDescription).")
+            if let error {
+                print("Error capturing photo: \(error.localizedDescription).")
                 return
             }
             guard let photoData = photo.fileDataRepresentation() else {
@@ -35,12 +35,11 @@ class Camera: ObservableObject {
             let jpegPhotos = croppedPhotos.compactMap { croppedPhoto in
                 return croppedPhoto.jpegData(compressionQuality: 100)
             }
-            let fileManager = FileManager.default
-            let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
+            let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
             jpegPhotos.enumerated().forEach { (index, data) in
                 let imageURL = url.appendingPathComponent("\(index).jpg")
                 let imagePath = imageURL.path
-                fileManager.createFile(atPath: imagePath, contents: data)
+                FileManager.default.createFile(atPath: imagePath, contents: data)
             }
             print("All three JPEG images were saved.")
             let uiImages = Camera.shared.loadImages()
@@ -78,6 +77,9 @@ class Camera: ObservableObject {
                 self.prepareCapture()
                 self.finishCapture()
                 self.startSession()
+            } else {
+                print("Access not granted.")
+                return
             }
         }
     }
@@ -113,11 +115,10 @@ class Camera: ObservableObject {
         print("Photo captured.")
     }
     func loadPhoto() -> UIImage? {
-        let fileManager = FileManager.default
-        let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
         let photoURL = url.appendingPathComponent("image.jpg")
         let photoPath = photoURL.path
-        guard fileManager.fileExists(atPath: photoPath) else {
+        guard FileManager.default.fileExists(atPath: photoPath) else {
             print("image.jpg doesn't exist.")
             return nil
         }
@@ -153,7 +154,7 @@ class Camera: ObservableObject {
     }
     func loadImages() -> [UIImage] {
         let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
-        let urls = (0...2).map { index in
+        let urls = (0 ... 2).map { index in
             return cachesDirectory.appendingPathComponent("\(index).jpg")
         }
         let data = urls.compactMap { url in
@@ -168,13 +169,13 @@ class Camera: ObservableObject {
         var body = Data()
         let boundaryPrefix = "--\(boundary)\r\n"
         let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
-        let urls = (0...2).map { index in
+        let urls = (0 ... 2).map { index in
             return cachesDirectory.appendingPathComponent("\(index).jpg")
         }
         let data = urls.compactMap { url in
             return try? Data(contentsOf: url)
         }
-        (0...2).forEach { index in
+        (0 ... 2).forEach { index in
             body.append(boundaryPrefix.data(using: .utf8)!)
             body.append("Content-Disposition: form-data; name=\"\("img_" + String(index + 1))\"; filename=\"\(String(index) + ".jpg")\"\r\n".data(using: .utf8)!)
             body.append("Content-Type: image/jpeg\r\n\r\n".data(using: .utf8)!)

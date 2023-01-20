@@ -1,7 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-class TTSManager: ObservableObject {
+class TTSManager {
     var audioPlayer: AVAudioPlayer!
     static let shared = TTSManager()
     private init() {}
