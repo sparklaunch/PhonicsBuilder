@@ -2,7 +2,6 @@ import SwiftUI
 
 struct OverlayView: View {
     @EnvironmentObject private var globalState: GlobalState
-    @Binding var iconsShown: Bool
     let height: Double
     var body: some View {
         ZStack {
@@ -11,7 +10,7 @@ struct OverlayView: View {
             if globalState.cameraAvailable {
                 CameraView()
             }
-            if iconsShown {
+            if Camera.shared.iconsShown {
                 IconsView()
             }
             if globalState.isRecording {

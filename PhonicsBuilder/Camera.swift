@@ -6,6 +6,7 @@ class Camera: ObservableObject {
     @Published public var id = UUID()
     @Published public var iconsShown = false
     public static let shared = Camera()
+    private init() {}
     class PreviewView: UIView {
         override class var layerClass: AnyClass {
             return AVCaptureVideoPreviewLayer.self
@@ -30,7 +31,7 @@ class Camera: ObservableObject {
                 return
             }
             let rotatedUIImage = uiImage.rotate(radians: -.pi / 2)
-            let croppedPhotos = Camera.cropPhoto(rotatedUIImage)
+            let croppedPhotos = Camera.shared.cropPhoto(rotatedUIImage)
             let jpegPhotos = croppedPhotos.compactMap { croppedPhoto in
                 return croppedPhoto.jpegData(compressionQuality: 100)
             }
@@ -42,17 +43,17 @@ class Camera: ObservableObject {
                 fileManager.createFile(atPath: imagePath, contents: data)
             }
             print("All three JPEG images were saved.")
-            let uiImages = Camera.loadImages()
-            Camera.sendRequest(uiImages: uiImages)
+            let uiImages = Camera.shared.loadImages()
+            Camera.shared.sendRequest(uiImages: uiImages)
         }
     }
-    static let pixelFormatType = kCVPixelFormatType_32BGRA
-    static let captureProcessor = PhotoCaptureProcessor()
-    static let photoOutput = AVCapturePhotoOutput()
-    static let previewView = PreviewView()
-    static let captureSession = AVCaptureSession()
-    static let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-    static func verifyPermissions() {
+    let pixelFormatType = kCVPixelFormatType_32BGRA
+    let captureProcessor = PhotoCaptureProcessor()
+    let photoOutput = AVCapturePhotoOutput()
+    let previewView = PreviewView()
+    let captureSession = AVCaptureSession()
+    let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+    func verifyPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             case .authorized:
                 prepareCapture()
@@ -71,16 +72,16 @@ class Camera: ObservableObject {
                 return
         }
     }
-    static func requestVideoPermission() {
+    func requestVideoPermission() {
         AVCaptureDevice.requestAccess(for: .video) { granted in
             if granted {
-                prepareCapture()
-                finishCapture()
-                startSession()
+                self.prepareCapture()
+                self.finishCapture()
+                self.startSession()
             }
         }
     }
-    static func prepareCapture() {
+    func prepareCapture() {
         captureSession.beginConfiguration()
         guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!), captureSession.canAddInput(videoDeviceInput) else {
             print("Initializing videoDeviceInput failed.")
@@ -88,7 +89,7 @@ class Camera: ObservableObject {
         }
         captureSession.addInput(videoDeviceInput)
     }
-    static func finishCapture() {
+    func finishCapture() {
         guard captureSession.canAddOutput(photoOutput) else {
             print("Adding photoOutput failed.")
             return
@@ -97,21 +98,21 @@ class Camera: ObservableObject {
         captureSession.addOutput(photoOutput)
         captureSession.commitConfiguration()
     }
-    static func getPreview() -> UIView {
+    func getPreview() -> UIView {
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.connection?.videoOrientation = .landscapeLeft
         previewView.videoPreviewLayer.session = captureSession
         return previewView
     }
-    static func startSession() {
+    func startSession() {
         captureSession.startRunning()
     }
-    static func capturePhoto() {
+    func capturePhoto() {
         let photoSettings = AVCapturePhotoSettings(format: [kCVPixelBufferPixelFormatTypeKey as String: pixelFormatType])
         photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
         print("Photo captured.")
     }
-    static func loadPhoto() -> UIImage? {
+    func loadPhoto() -> UIImage? {
         let fileManager = FileManager.default
         let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!
         let photoURL = url.appendingPathComponent("image.jpg")
@@ -130,7 +131,7 @@ class Camera: ObservableObject {
         }
         return uiImage
     }
-    static func cropPhoto(_ uiImage: UIImage) -> [UIImage] {
+    func cropPhoto(_ uiImage: UIImage) -> [UIImage] {
         let width = uiImage.size.width
         let height = uiImage.size.height
         let firstCropRect = CGRect(x: 0, y: height * 0.2, width: width * 0.33, height: height * 0.6)
@@ -150,7 +151,7 @@ class Camera: ObservableObject {
         }
         return cropResults
     }
-    static func loadImages() -> [UIImage] {
+    func loadImages() -> [UIImage] {
         let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
         let urls = (0...2).map { index in
             return cachesDirectory.appendingPathComponent("\(index).jpg")
@@ -163,7 +164,7 @@ class Camera: ObservableObject {
         }
         return images
     }
-    static func createBody(boundary: String) -> Data {
+    func createBody(boundary: String) -> Data {
         var body = Data()
         let boundaryPrefix = "--\(boundary)\r\n"
         let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
@@ -183,7 +184,7 @@ class Camera: ObservableObject {
         body.append(boundaryPrefix.data(using: .utf8)!)
         return body
     }
-    static func sendRequest(uiImages: [UIImage]) {
+    func sendRequest(uiImages: [UIImage]) {
         let endPoint = URL(string: "http://3.38.222.142/ocr")!
         let boundary = "Boundary-\(UUID().uuidString)"
         var request = URLRequest(url: endPoint)
@@ -221,7 +222,7 @@ class Camera: ObservableObject {
 
 struct Preview: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
-        return Camera.getPreview()
+        return Camera.shared.getPreview()
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
         // TODO: NOTHING TO DO.

@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct CameraView: View {
-    @EnvironmentObject private var camera: Camera
     var body: some View {
         VStack {
             LottieView(jsonName: "Camera")
@@ -12,7 +11,7 @@ struct CameraView: View {
                 )
                 .padding()
                 .onTapGesture {
-                    Camera.capturePhoto()
+                    Camera.shared.capturePhoto()
                 }
             Spacer()
         }
