@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RootView: View {
+    @EnvironmentObject private var camera: Camera
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .center) {
@@ -11,12 +12,12 @@ struct RootView: View {
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear {
-            Camera.shared.verifyPermissions()
+            camera.verifyPermissions()
         }
-        .onChange(of: Camera.shared.id) { _ in
-            if !Camera.shared.results.isEmpty {
+        .onChange(of: camera.id) { _ in
+            if !camera.results.isEmpty {
                 withAnimation {
-                    Camera.shared.iconsShown = true                    
+                    camera.iconsShown = true
                 }
                 TTSManager.shared.requestTTS()
             }

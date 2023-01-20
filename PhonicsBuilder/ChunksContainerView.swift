@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ChunksContainerView: View {
+    @EnvironmentObject private var resultsManager: ResultsManager
     var scores: [Grade] {
-        return ResultsManager.shared.results.words.map { word in
+        return resultsManager.results.words.map { word in
             let score = Int(word.score)
             switch score {
                 case Constants.excellentThreshold...:
@@ -17,7 +18,7 @@ struct ChunksContainerView: View {
         }
     }
     var texts: [String] {
-        return ResultsManager.shared.results.words.map { word in
+        return resultsManager.results.words.map { word in
             return word.word.lowercased()
         }
     }

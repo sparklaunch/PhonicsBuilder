@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct LoadingView: View {
+    @EnvironmentObject private var resultsManager: ResultsManager
     @EnvironmentObject private var globalState: GlobalState
     var body: some View {
         ZStack {
@@ -8,7 +9,7 @@ struct LoadingView: View {
             ProgressView()
                 .scaleEffect(3)
         }
-        .onChange(of: ResultsManager.shared.id) { _ in
+        .onChange(of: resultsManager.id) { _ in
             withAnimation {
                 globalState.finishedRecording = false
                 globalState.showingResultsScreen = true

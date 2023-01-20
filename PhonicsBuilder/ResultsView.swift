@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ResultsView: View {
+    @EnvironmentObject private var resultsManager: ResultsManager
     @ViewBuilder var gradeView: some View {
-        switch Int(ResultsManager.shared.results.totalScore) {
+        switch Int(resultsManager.results.totalScore) {
             case Constants.excellentThreshold...:
                 ExcellentView()
             case Constants.goodThreshold...:
