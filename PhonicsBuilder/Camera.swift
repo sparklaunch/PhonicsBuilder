@@ -206,8 +206,10 @@ class Camera: ObservableObject {
                     print("Responded with...")
                     print(jsonObject)
                     let results = jsonObject["result"]! as! [String]
-                    Camera.shared.results = results
-                    Camera.shared.id = UUID()
+                    withAnimation {
+                        Camera.shared.results = results
+                        Camera.shared.id = UUID()
+                    }
                 } catch {
                     print(error.localizedDescription)
                 }
