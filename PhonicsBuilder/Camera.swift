@@ -2,10 +2,10 @@ import SwiftUI
 import AVFoundation
 
 class Camera: ObservableObject {
-    @Published public var results: [String] = []
-    @Published public var id = UUID()
-    @Published public var iconsShown = false
-    public static let shared = Camera()
+    @Published var results: [String] = []
+    @Published var id = UUID()
+    @Published var iconsShown = false
+    static let shared = Camera()
     private init() {}
     class PreviewView: UIView {
         override class var layerClass: AnyClass {
