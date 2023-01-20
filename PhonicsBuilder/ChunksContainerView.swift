@@ -1,18 +1,18 @@
 import SwiftUI
 
 struct ChunksContainerView: View {
-    var scores: [Int] {
+    var scores: [Grade] {
         return ResultsManager.shared.results.words.map { word in
             let score = Int(word.score)
             switch score {
                 case Constants.excellentThreshold...:
-                    return 3
+                    return Grade.excellent
                 case Constants.goodThreshold...:
-                    return 2
-                case Constants.tryAgainThreshold...:
-                    return 1
+                    return Grade.good
+                case Constants.niceTryThreshold...:
+                    return Grade.niceTry
                 default:
-                    return 0
+                    return Grade.poor
             }
         }
     }

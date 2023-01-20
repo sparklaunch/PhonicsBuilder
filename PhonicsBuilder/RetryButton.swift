@@ -11,8 +11,8 @@ struct RetryButton: View {
                     globalState.showingResultsScreen = false
                     globalState.finishedRecording = false
                     globalState.isRecording = true
-                    RecordingManager.shared.startRecording()
                 }
+                RecordingManager.shared.startRecording()
             }
     }
 }

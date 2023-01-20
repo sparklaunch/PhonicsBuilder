@@ -94,6 +94,7 @@
 		3D258DAC29790DEE00DF5D68 /* EFuture.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D258DAB29790DEE00DF5D68 /* EFuture.otf */; };
 		3D258DAE2979128000DF5D68 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DAD2979128000DF5D68 /* RetryButton.swift */; };
 		3D258DB3297A301300DF5D68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB2297A301300DF5D68 /* Constants.swift */; };
+		3D258DB5297A337400DF5D68 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB4297A337400DF5D68 /* Grade.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -228,6 +229,7 @@
 		3D258DAB29790DEE00DF5D68 /* EFuture.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EFuture.otf; sourceTree = "<group>"; };
 		3D258DAD2979128000DF5D68 /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
 		3D258DB2297A301300DF5D68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3D258DB4297A337400DF5D68 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				3D258DB2297A301300DF5D68 /* Constants.swift */,
+				3D258DB4297A337400DF5D68 /* Grade.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				9036BB9C2976B6AE0006C850 /* ExcellentView.swift in Sources */,
 				3D258D9C2977ABF300DF5D68 /* RecordingManager.swift in Sources */,
 				3D258D942977768D00DF5D68 /* CameraView.swift in Sources */,
+				3D258DB5297A337400DF5D68 /* Grade.swift in Sources */,
 				3D6F96A129713F1D00FEFBF8 /* PreView.swift in Sources */,
 				9036BBA72976B8320006C850 /* NiceTryView.swift in Sources */,
 				9036BB9A2976B5920006C850 /* ResultsView.swift in Sources */,

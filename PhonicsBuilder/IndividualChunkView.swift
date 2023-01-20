@@ -5,26 +5,24 @@ struct IndividualChunkView: View {
     @State private var audioPlayer: AVAudioPlayer!
     @State private var scale = 1.0
     let text: String
-    let score: Int
+    let score: Grade
     var borderColor: Color {
         switch score {
-            case 3:
+            case .excellent:
                 return Color("ExcellentColor")
-            case 2:
+            case .good:
                 return Color("GoodColor")
-            case 1:
+            case .niceTry:
                 return Color("NiceTryColor")
-            case 0:
-                return Color("PoorColor")
             default:
                 return Color("PoorColor")
         }
     }
     var face: Image {
         switch score {
-            case 3:
+            case .excellent:
                 return Image("HappyFace")
-            case 2:
+            case .good:
                 return Image("IdleFace")
             default:
                 return Image("UnsureFace")

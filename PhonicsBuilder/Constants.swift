@@ -7,7 +7,7 @@ enum Constants {
     static let pronunciationEndPoint = "http://3.38.222.142/pron"
     static let excellentThreshold = 70
     static let goodThreshold = 30
-    static let tryAgainThreshold = 10
+    static let niceTryThreshold = 10
     static let resultsChunkFontSize = 100.0
     static let eFutureFont = "EFUTURE4_EB"
 }
