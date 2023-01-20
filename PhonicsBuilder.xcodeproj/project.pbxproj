@@ -969,6 +969,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhonicsBuilder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Phonics Builder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근 권한이 필요합니다.";
@@ -1002,6 +1003,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhonicsBuilder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Phonics Builder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근 권한이 필요합니다.";
