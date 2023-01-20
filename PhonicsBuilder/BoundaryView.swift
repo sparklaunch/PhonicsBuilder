@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct BoundaryView: View {
+    let isPhone = UIDevice.current.userInterfaceIdiom == .phone
     let height: Double
     var body: some View {
         ZStack {
@@ -18,6 +19,6 @@ struct BoundaryView: View {
                 }
             }
         }
-        .frame(height: height * 0.6)
+        .frame(height: isPhone ? height * 1.0 : height * 0.6)
     }
 }
