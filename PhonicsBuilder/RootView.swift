@@ -24,7 +24,7 @@ struct RootView: View {
         .onAppear {
             Camera.verifyPermissions()
         }
-        .onChange(of: camera.results) { _ in
+        .onChange(of: camera.id) { _ in
             if !camera.results.isEmpty {
                 camera.iconsShown = true
                 TTSManager.shared.requestTTS()

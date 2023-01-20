@@ -3,6 +3,7 @@ import AVFoundation
 
 class Camera: ObservableObject {
     @Published public var results: [String] = []
+    @Published public var id = UUID()
     @Published public var iconsShown = false
     public static let shared = Camera()
     class PreviewView: UIView {
@@ -206,6 +207,7 @@ class Camera: ObservableObject {
                     print(jsonObject)
                     let results = jsonObject["result"]! as! [String]
                     Camera.shared.results = results
+                    Camera.shared.id = UUID()
                 } catch {
                     print(error.localizedDescription)
                 }
