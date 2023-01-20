@@ -12,6 +12,7 @@ class RecordingManager {
             try recordingSession.setActive(true)
         } catch {
             print(error.localizedDescription)
+            return
         }
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
@@ -26,6 +27,7 @@ class RecordingManager {
             audioRecorder.record()
         } catch {
             print(error.localizedDescription)
+            return
         }
     }
     func stopRecording() {
@@ -36,6 +38,7 @@ class RecordingManager {
             try audioSession.setActive(true)
         } catch {
             print(error.localizedDescription)
+            return
         }
         sendRecordedAudio()
     }
@@ -62,6 +65,7 @@ class RecordingManager {
                 }
             } catch {
                 print(error.localizedDescription)
+                return
             }
         }
         task.resume()

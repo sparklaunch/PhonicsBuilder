@@ -4,7 +4,8 @@ extension UIImage {
     func rotate(radians: CGFloat) -> UIImage {
         let rotatedSize = CGRect(origin: .zero, size: size)
             .applying(CGAffineTransform(rotationAngle: CGFloat(radians)))
-            .integral.size
+            .integral
+            .size
         UIGraphicsBeginImageContext(rotatedSize)
         if let context = UIGraphicsGetCurrentContext() {
             let origin = CGPoint(x: rotatedSize.width / 2.0, y: rotatedSize.height / 2.0)
