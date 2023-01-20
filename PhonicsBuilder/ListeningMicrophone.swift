@@ -10,7 +10,9 @@ struct ListeningMicrophone: View {
             .animation(.linear(duration: 0.5).repeatForever(autoreverses: true), value: bouncing)
             .padding()
             .onAppear {
-                bouncing = true
+                withAnimation {
+                    bouncing = true                    
+                }
             }
             .onTapGesture {
                 RecordingManager.shared.stopRecording()

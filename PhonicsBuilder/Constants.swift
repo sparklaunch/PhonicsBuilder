@@ -9,5 +9,6 @@ enum Constants {
     static let goodThreshold = 30
     static let niceTryThreshold = 10
     static let resultsChunkFontSize = 100.0
+    static let chunkFontSize = 150.0
     static let eFutureFont = "EFUTURE4_EB"
 }

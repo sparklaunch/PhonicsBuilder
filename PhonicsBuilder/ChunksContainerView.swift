@@ -23,9 +23,9 @@ struct ChunksContainerView: View {
     }
     var body: some View {
         HStack(spacing: 30) {
-            IndividualChunkView(text: texts[0], score: scores[0])
-            IndividualChunkView(text: texts[1], score: scores[1])
-            IndividualChunkView(text: texts[2], score: scores[2])
+            ForEach(0 ..< 3) { index in
+                IndividualChunkView(text: texts[index], score: scores[index])
+            }
         }
     }
 }

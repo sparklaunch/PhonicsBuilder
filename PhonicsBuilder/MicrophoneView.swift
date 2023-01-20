@@ -8,8 +8,8 @@ struct MicrophoneView: View {
         Button {
             withAnimation {
                 globalState.isRecording = true
-                RecordingManager.shared.startRecording()
             }
+            RecordingManager.shared.startRecording()
         } label: {
             LottieView(jsonName: "Microphone")
                 .frame(width: 100, height: 100)
