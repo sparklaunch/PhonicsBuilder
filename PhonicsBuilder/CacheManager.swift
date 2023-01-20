@@ -13,8 +13,8 @@ enum CacheManager {
         do {
             for cache in caches {
                 try FileManager.default.removeItem(atPath: cache)
+                print("\(cache) deleted.")
             }
-            print("Caches cleared.")
         } catch {
             print(error.localizedDescription)
             return
