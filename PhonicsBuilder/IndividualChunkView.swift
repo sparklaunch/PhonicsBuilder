@@ -20,6 +20,16 @@ struct IndividualChunkView: View {
                 return Color("PoorColor")
         }
     }
+    var face: Image {
+        switch score {
+            case 3:
+                return Image("HappyFace")
+            case 2:
+                return Image("IdleFace")
+            default:
+                return Image("UnsureFace")
+        }
+    }
     var body: some View {
         VStack(spacing: 20) {
             ZStack {
@@ -54,11 +64,12 @@ struct IndividualChunkView: View {
             )
             .clipShape(RoundedRectangle(cornerRadius: 30))
             .shadow(radius: 10)
-            HStack {
-                Star(filled: score >= 1)
-                Star(filled: score >= 2)
-                Star(filled: score >= 3)
-            }
+            .overlay(
+                face
+                    .scaleEffect(2.0)
+                    .offset(y: -30)
+                , alignment: .top
+            )
         }
     }
 }
