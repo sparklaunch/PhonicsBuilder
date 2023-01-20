@@ -97,6 +97,7 @@
 		3D258DB5297A337400DF5D68 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB4297A337400DF5D68 /* Grade.swift */; };
 		3D258DB8297A3B1800DF5D68 /* PronunciationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB7297A3B1800DF5D68 /* PronunciationResult.swift */; };
 		3D258DBA297A3B3700DF5D68 /* WordResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DB9297A3B3700DF5D68 /* WordResult.swift */; };
+		3D258DBC297A609300DF5D68 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258DBB297A609300DF5D68 /* CacheManager.swift */; };
 		3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */; };
 		3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F964E296B796200FEFBF8 /* ContentView.swift */; };
 		3D6F9651296B796300FEFBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6F9650296B796300FEFBF8 /* Assets.xcassets */; };
@@ -234,6 +235,7 @@
 		3D258DB4297A337400DF5D68 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		3D258DB7297A3B1800DF5D68 /* PronunciationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationResult.swift; sourceTree = "<group>"; };
 		3D258DB9297A3B3700DF5D68 /* WordResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResult.swift; sourceTree = "<group>"; };
+		3D258DBB297A609300DF5D68 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		3D6F9649296B796200FEFBF8 /* PhonicsBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicsBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F964C296B796200FEFBF8 /* PhonicsBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsBuilderApp.swift; sourceTree = "<group>"; };
 		3D6F964E296B796200FEFBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 				3D258D9929777AD100DF5D68 /* TTSManager.swift */,
 				3D258D9B2977ABF300DF5D68 /* RecordingManager.swift */,
 				3D258D9D2978B55300DF5D68 /* ResultsManager.swift */,
+				3D258DBB297A609300DF5D68 /* CacheManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -798,6 +801,7 @@
 				3DD87BDD2971429A00493874 /* ContentViewExtensions.swift in Sources */,
 				3D258DA22978C8CD00DF5D68 /* SeaElephant.swift in Sources */,
 				3D6F9684296FAC2A00FEFBF8 /* BoundaryCornerView.swift in Sources */,
+				3D258DBC297A609300DF5D68 /* CacheManager.swift in Sources */,
 				3D6F964F296B796200FEFBF8 /* ContentView.swift in Sources */,
 				3D6F967E296FA57B00FEFBF8 /* BoundaryView.swift in Sources */,
 				3D6F964D296B796200FEFBF8 /* PhonicsBuilderApp.swift in Sources */,

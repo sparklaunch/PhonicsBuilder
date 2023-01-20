@@ -44,6 +44,7 @@ class Camera: ObservableObject {
             print("All three JPEG images were saved.")
             let uiImages = Camera.shared.loadImages()
             Camera.shared.sendRequest(uiImages: uiImages)
+            CacheManager.clearCachesDirectory()
         }
     }
     let pixelFormatType = kCVPixelFormatType_32BGRA

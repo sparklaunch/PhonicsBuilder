@@ -63,6 +63,7 @@ class RecordingManager {
                     ResultsManager.shared.results = results
                     ResultsManager.shared.id = UUID()
                 }
+                CacheManager.clearCachesDirectory()
             } catch {
                 print(error.localizedDescription)
                 return
