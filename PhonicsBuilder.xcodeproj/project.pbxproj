@@ -288,6 +288,15 @@
 		3D258D002977725000DF5D68 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				3D258DB0297A29EE00DF5D68 /* Effects */,
+				3D258DAF297A29E500DF5D68 /* Chunks */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		3D258DAF297A29E500DF5D68 /* Chunks */ = {
+			isa = PBXGroup;
+			children = (
 				3D258D3C2977725E00DF5D68 /* a.mp3 */,
 				3D258D312977725E00DF5D68 /* ai.mp3 */,
 				3D258D382977725E00DF5D68 /* ar.mp3 */,
@@ -298,7 +307,6 @@
 				3D258D3F2977725E00DF5D68 /* c.mp3 */,
 				3D258D0F2977725D00DF5D68 /* ch.mp3 */,
 				3D258D1E2977725D00DF5D68 /* cl.mp3 */,
-				3D258D482977725F00DF5D68 /* click.wav */,
 				3D258D392977725E00DF5D68 /* cr.mp3 */,
 				3D258D212977725D00DF5D68 /* d.mp3 */,
 				3D258D352977725E00DF5D68 /* dr.mp3 */,
@@ -306,13 +314,11 @@
 				3D258D272977725D00DF5D68 /* ea.mp3 */,
 				3D258D2F2977725E00DF5D68 /* ee.mp3 */,
 				3D258D1B2977725D00DF5D68 /* er.mp3 */,
-				3D258D172977725D00DF5D68 /* excellent.mp3 */,
 				3D258D402977725E00DF5D68 /* f.mp3 */,
 				3D258D282977725D00DF5D68 /* fl.mp3 */,
 				3D258D252977725D00DF5D68 /* fr.mp3 */,
 				3D258D2E2977725E00DF5D68 /* g.mp3 */,
 				3D258D3B2977725E00DF5D68 /* gl.mp3 */,
-				3D258D182977725D00DF5D68 /* good.mp3 */,
 				3D258D442977725E00DF5D68 /* h.mp3 */,
 				3D258D012977725C00DF5D68 /* i.mp3 */,
 				3D258D1A2977725D00DF5D68 /* ir.mp3 */,
@@ -360,7 +366,17 @@
 				3D258D162977725D00DF5D68 /* y.mp3 */,
 				3D258D322977725E00DF5D68 /* z.mp3 */,
 			);
-			name = Sounds;
+			name = Chunks;
+			sourceTree = "<group>";
+		};
+		3D258DB0297A29EE00DF5D68 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				3D258D482977725F00DF5D68 /* click.wav */,
+				3D258D172977725D00DF5D68 /* excellent.mp3 */,
+				3D258D182977725D00DF5D68 /* good.mp3 */,
+			);
+			name = Effects;
 			sourceTree = "<group>";
 		};
 		3D6F9640296B796100FEFBF8 = {
