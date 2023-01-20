@@ -2,7 +2,7 @@ import SwiftUI
 import AVFoundation
 
 struct MegaphoneView: View {
-    @State private var megaphoneScaleAndOpacity = 0.0
+    @State private var megaphoneScaleAndOpacity: Double = .zero
     @State private var audioPlayer: AVAudioPlayer!
     var body: some View {
         Button {
@@ -31,7 +31,7 @@ struct MegaphoneView: View {
             }
             .onDisappear {
                 withAnimation {
-                    megaphoneScaleAndOpacity = 0.0
+                    megaphoneScaleAndOpacity = .zero
                 }
             }
         }

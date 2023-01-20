@@ -2,9 +2,9 @@ import SwiftUI
 
 struct Elephant: View {
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: .zero) {
             Spacer()
-            HStack(spacing: 0) {
+            HStack(spacing: .zero) {
                 Spacer()
                 Image("Elephant")
                     .scaleEffect(2.0)

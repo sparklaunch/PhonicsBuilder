@@ -134,7 +134,7 @@ class Camera: ObservableObject {
     func cropPhoto(_ uiImage: UIImage) -> [UIImage] {
         let width = uiImage.size.width
         let height = uiImage.size.height
-        let firstCropRect = CGRect(x: 0, y: height * 0.2, width: width * 0.33, height: height * 0.6)
+        let firstCropRect = CGRect(x: .zero, y: height * 0.2, width: width * 0.33, height: height * 0.6)
         let secondCropRect = CGRect(x: width * 0.33, y: height * 0.2, width: width * 0.33, height: height * 0.6)
         let thirdCropRect = CGRect(x: width * 0.66, y: height * 0.2, width: width * 0.33, height: height * 0.6)
         var cropResults: [UIImage] = []

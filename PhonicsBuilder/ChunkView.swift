@@ -3,7 +3,7 @@ import AVFoundation
 
 struct ChunkView: View {
     @State private var audioPlayer: AVAudioPlayer!
-    @State private var textSize = 0.0
+    @State private var textSize: Double = .zero
     let text: String
     var body: some View {
         ZStack {

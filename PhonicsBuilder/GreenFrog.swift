@@ -2,8 +2,8 @@ import SwiftUI
 
 struct GreenFrog: View {
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(spacing: 0) {
+        VStack(spacing: .zero) {
+            HStack(spacing: .zero) {
                 Spacer()
                 Image("GreenFrog")
                     .scaleEffect(2.0)

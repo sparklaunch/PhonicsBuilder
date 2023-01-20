@@ -3,7 +3,7 @@ import AVFoundation
 
 struct MicrophoneView: View {
     @EnvironmentObject private var globalState: GlobalState
-    @State private var microphoneScaleAndOpacity = 0.0
+    @State private var microphoneScaleAndOpacity: Double = .zero
     var body: some View {
         Button {
             withAnimation {
@@ -23,7 +23,7 @@ struct MicrophoneView: View {
                 }
                 .onDisappear {
                     withAnimation {
-                        microphoneScaleAndOpacity = 0.0
+                        microphoneScaleAndOpacity = .zero
                     }
                 }
         }

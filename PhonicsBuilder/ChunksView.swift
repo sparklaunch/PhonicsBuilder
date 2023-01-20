@@ -20,6 +20,6 @@ struct ChunksView: View {
             .foregroundColor(Color("MainColor"))
             .frame(width: geometry.size.width, height: geometry.size.height)
         }
-        .opacity(Camera.shared.results.isEmpty ? 0 : 1)
+        .opacity(Camera.shared.results.isEmpty ? .zero : 1)
     }
 }
