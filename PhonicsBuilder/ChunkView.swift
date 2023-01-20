@@ -8,7 +8,7 @@ struct ChunkView: View {
     var body: some View {
         ZStack {
             Text(text)
-                .font(.custom("EFUTURE4_EB", size: 150))
+                .font(.custom(Constants.eFutureFont, size: 150))
                 .scaleEffect(textSize)
                 .onAppear {
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 3)) {

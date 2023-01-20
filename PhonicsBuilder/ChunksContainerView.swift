@@ -5,11 +5,11 @@ struct ChunksContainerView: View {
         return ResultsManager.shared.results.words.map { word in
             let score = Int(word.score)
             switch score {
-                case 70...:
+                case Constants.excellentThreshold...:
                     return 3
-                case 30...:
+                case Constants.goodThreshold...:
                     return 2
-                case 10...:
+                case Constants.tryAgainThreshold...:
                     return 1
                 default:
                     return 0

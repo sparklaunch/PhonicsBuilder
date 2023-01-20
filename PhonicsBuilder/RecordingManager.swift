@@ -60,7 +60,7 @@ class RecordingManager: ObservableObject {
         sendRecordedAudio()
     }
     func sendRecordedAudio() {
-        let endPoint = URL(string: "http://3.38.222.142/pron")!
+        let endPoint = URL(string: Constants.pronunciationEndPoint)!
         let boundary = "Boundary-\(UUID().uuidString)"
         var request = URLRequest(url: endPoint)
         request.httpMethod = "POST"

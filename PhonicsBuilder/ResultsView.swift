@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ResultsView: View {
     @ViewBuilder var gradeView: some View {
-        switch ResultsManager.shared.results.totalScore {
-            case 70...:
+        switch Int(ResultsManager.shared.results.totalScore) {
+            case Constants.excellentThreshold...:
                 ExcellentView()
-            case 30...:
+            case Constants.goodThreshold...:
                 GoodView()
             default:
                 NiceTryView()

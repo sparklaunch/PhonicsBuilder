@@ -7,14 +7,14 @@ class TTSManager: ObservableObject {
     private init() {}
     func requestTTS() {
         let strings = Camera.shared.results
-        guard let endPoint = URL(string: "http://3.38.222.142/tts") else {
+        guard let endPoint = URL(string: Constants.ttsEndPoint) else {
             print("URL error.")
             return
         }
         let queryString = "words=\(strings[0]),\(strings[1]),\(strings[2])"
         var request = URLRequest(url: endPoint)
         request.httpMethod = "POST"
-        request.setValue("feafc8ee6fa249d496369ac40b256b95", forHTTPHeaderField: "X-API-KEY")
+        request.setValue(Constants.apiKey, forHTTPHeaderField: "X-API-KEY")
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = queryString.data(using: .utf8)
